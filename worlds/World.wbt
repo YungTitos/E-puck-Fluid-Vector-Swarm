@@ -1,0 +1,31 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/RectangleArena.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.5773502691896257 0.5773502691896257 0.5773502691896257 2.0944
+  position -9.255375563251302e-06 -9.255401734028961e-06 6.726808822418403
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+  luminosity 0
+}
+RectangleArena {
+  floorSize 3 2
+}
+PointLight {
+  attenuation 0 0 1
+  intensity 25
+  location 1.4 0 0.1
+}
+Robot {
+  name "World_Generator"
+  controller "world_generator"
+  supervisor TRUE
+}

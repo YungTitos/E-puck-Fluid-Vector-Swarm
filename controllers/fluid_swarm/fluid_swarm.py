@@ -3,10 +3,10 @@ from controller import Robot
 
 # SWARM TUNING PARAMETERS 
 # Vector Weights
-WEIGHT_LIGHT = 0.001   # The Pull
-WEIGHT_PROX = 0.0000001    # The Push (Repulsion)
-WEIGHT_SLIDE = 0.010   # The Flow (Tangential)
-WEIGHT_NOISE = 3.0     # The Wander (Jitter)
+WEIGHT_LIGHT = 0.0001   # The Pull
+WEIGHT_PROX = 0.00001   # The Push (Repulsion)
+WEIGHT_SLIDE = 0.005   # The Flow (Tangential)
+WEIGHT_NOISE = 1.0     # The Wander (Jitter)
 
 # Thresholds & Speeds
 BASE_SPEED_FRAC = 0.5        # Percentage of MAX_SPEED to drive forward continuously
@@ -94,8 +94,8 @@ while robot.step(TIME_STEP) != -1:
     right_speed = MAX_SPEED * BASE_SPEED_FRAC
     
     # 1. Apply Light Vector (Always active)
-    left_speed -= (light_difference * WEIGHT_LIGHT)
-    right_speed += (light_difference * WEIGHT_LIGHT)
+    left_speed += (light_difference * WEIGHT_LIGHT)
+    right_speed -= (light_difference * WEIGHT_LIGHT)
     
     # Repulsion Vector (ALWAYS active to prevent crashing into walls/peers)
     if abs(prox_difference) > 150:

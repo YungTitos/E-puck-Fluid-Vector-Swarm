@@ -1,17 +1,33 @@
 import random
 from controller import Robot
 
-# SWARM TUNING PARAMETERS 
-# Vector Weights
-WEIGHT_LIGHT = 0.0001   # The Pull
-WEIGHT_PROX = 0.00001   # The Push (Repulsion)
-WEIGHT_SLIDE = 0.005   # The Flow (Tangential)
-WEIGHT_NOISE = 1.0     # The Wander (Jitter)
+# INITIALIZATION
+robot = Robot()
+TIME_STEP = int(robot.getBasicTimeStep())
+MAX_SPEED = 6.28 
+
+# DEFAULT SWARM TUNING PARAMETERS
+WEIGHT_LIGHT = 0.0001   
+WEIGHT_PROX = 0.00001   
+WEIGHT_SLIDE = 0.005   
+WEIGHT_NOISE = 1.0     
+
+# OPTUNA PIPELINE HOOK
+custom_data = robot.getCustomData()
+if custom_data:
+    try:
+        params = custom_data.split(',')
+        WEIGHT_LIGHT = float(params[0])
+        WEIGHT_PROX = float(params[1])
+        WEIGHT_SLIDE = float(params[2])
+        WEIGHT_NOISE = float(params[3])
+    except Exception as e:
+        print(f"Error parsing customData: {e}")
 
 # Thresholds & Speeds
-BASE_SPEED_FRAC = 0.5        # Percentage of MAX_SPEED to drive forward continuously
-SLIDE_THRESHOLD = 300        # Proximity reading required to trigger wall-sliding
-LIGHT_STOP_THRESHOLD = 25000  # Total light reading below which the robot stops
+BASE_SPEED_FRAC = 0.5        
+SLIDE_THRESHOLD = 300        
+LIGHT_STOP_THRESHOLD = 18000 
 
 # Swarm State Variables
 my_slide_dir = random.choice([-1, 1])
@@ -19,12 +35,6 @@ noise_timer = 0
 noise_left = 0
 noise_right = 0
 is_finished = False
-
-# 2. INITIALIZATION
-robot = Robot()
-TIME_STEP = int(robot.getBasicTimeStep())
-MAX_SPEED = 6.28  # Maximum wheel speed for an e-puck in rad/s
-
 
 # 3. MOTOR SETUP
 

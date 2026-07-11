@@ -1,9 +1,10 @@
 from enum import Enum
 import math
 import random
-
+from typing import cast
 
 from controller import Robot, Motor, DistanceSensor, LightSensor
+
 
 class Side(Enum):
     LEFT = "left"
@@ -14,38 +15,24 @@ class Strength(Enum):
     NORMAL = 1.0
 
 class RobotParticle:
-    """
-    Constructor for the RobotParticle object
-    Args: 
-    - radius (float): The radius of the free space around the robot, used for separation
-    - margin (float): The extra area outside the separation area, used to monitor swarm direction
-    - base_speed (flaot): 
-    - base_time_unit (int): Milliseconds ...
-    - w_alignment (float):
-    - w_separation (float):
-    - w_cohesion (float):
-    - w_noise (float):
-    """
     def __init__(
             self, 
-            radius: float = 0.2,
-            margin: float = 0.1,
             tick_per_motion_step: int = 3,
             base_speed: float = 1.0,
             w_alignment: float = 1.0, 
             w_separation: float = 1.0, 
             w_cohesion: float = 1.0, 
             w_noise: float = 1.0,
-            light_stop_threashold: int = 12500
+            light_stop_threashold: int = 5000,
+            proximity_threshold: int = 120,
+            proximity_threshold_margin: int = 60
         ):
         self.controller: Robot = Robot()
-        self.left_motor: Motor = self.controller.getMotor("left wheel motor")
-        self.right_motor: Motor = self.controller.getMotor("right wheel motor")
+        self.left_motor: Motor = cast(Motor, self.controller.getDevice("left wheel motor"))
+        self.right_motor: Motor = cast(Motor, self.controller.getDevice("right wheel motor"))
         self.light_sensors_array: list[LightSensor] = []
         self.proximity_sensors_array: list[DistanceSensor] = []
 
-        self.radius: float = radius
-        self.margin: float = margin
         self.base_time_step: int = int(self.controller.getBasicTimeStep())
         self.tick_per_motion_step: int = tick_per_motion_step
         self.motion_time_step: int = self.base_time_step * self.tick_per_motion_step
@@ -58,14 +45,17 @@ class RobotParticle:
         self.w_noise: float = w_noise
         
         self.light_stop_threashold: int = light_stop_threashold
+        self.proximity_threshold: int = proximity_threshold
+        self.proximity_threshold_margin: int = proximity_threshold_margin
+
         self.should_stop: bool = False
 
         for i in range(8):
             self.light_sensors_array.append(
-                self.controller.getLightSensor(f"ls{i}")
+                cast(LightSensor, self.controller.getDevice(f"ls{i}"))
             )
             self.proximity_sensors_array.append(
-                self.controller.getDistanceSensor(f"ps{i}")
+                cast(DistanceSensor, self.controller.getDevice(f"ps{i}"))
             )
 
         self.__sensor_setup()
@@ -134,7 +124,7 @@ class RobotParticle:
 
         self.controller.step(self.motion_time_step)
         """
-
+        
         # Direction vector decoding
         # TODO: chek correct bahaviour, if the force point backwards
         forward = direction_vector[0]
@@ -152,7 +142,7 @@ class RobotParticle:
     """
     ...
     Modify self.should_stop, based on the sensed light. If the total amount of light
-    is above a threshold, the goal area is reached and the robot can stop.
+    is below a threshold, the goal area is reached and the robot can stop.
     """
     def __get_alignment_vector(self) -> tuple[float, float]:
         front_left: float = (self.light_sensors_array[7].getValue() + self.light_sensors_array[6].getValue()) / 2
@@ -161,7 +151,7 @@ class RobotParticle:
         front_right: float = (self.light_sensors_array[1].getValue() + self.light_sensors_array[0].getValue()) / 2
 
         total_light = front_left + back_left + back_right + front_right
-        if total_light >= self.light_stop_threashold:
+        if total_light < self.light_stop_threashold:
             self.should_stop = True
         
         if front_left <= back_left and front_left <= back_right and front_left <= front_right:
@@ -174,50 +164,60 @@ class RobotParticle:
             return (1, -1)
 
     def __get_separation_vector(self) -> tuple[float, float]:
-        proximity_readings: list[tuple[float, float]] = []
+        result: list[float] = [0.0, 0.0]
 
         for i in range(8):
-            # TODO: verify that the angles actually match the sensors direction
-            # TODO: verify that the module arithmetic is correct (suppose to 
-            # handle the edges of the sensor array)
-            angle: float = 2 * math.pi * i / ((i + 1) % 8)
-            value: float = self.proximity_sensors_array[7 - i].getValue() + self.proximity_sensors_array[7 - i - 1].getValue()
-            if value < self.radius:
-                proximity_readings.append((value * math.cos(angle), value * math.sin(angle)))
+            angle: float = 2 * math.pi * i / 8
+            value: float = (
+                self.proximity_sensors_array[7 - i].getValue() + 
+                self.proximity_sensors_array[7 - i - 1].getValue()
+            ) / 2
+
+            if value <= self.proximity_threshold:
+                result[0] += value * math.cos(angle)
+                result[1] += value * math.sin(angle)
 
         result: list[float] = [0.0, 0.0]
         # Sum all the distance vector, to get the resulting one
-        for reading in proximity_readings:
-            result[0] += reading[0]
-            result[1] += reading[1]
+        result[0] = -result[0]
+        result[1] = -result[1]
 
         # Normalise the resulting vector
-        norm: float = math.sqrt(result[0]**2 + result[1]**2)
+        norm: float = math.sqrt(result[0] ** 2 + result[1] ** 2)
+
+        if norm == 0.0:
+            return (0.0, 0.0)
+
         result[0] /= norm
         result[1] /= norm
 
         return (result[0], result[1])
 
     def __get_cohesion_vector(self) -> tuple[float, float]:
-        proximity_readings: list[tuple[float, float]] = []
+        result: list[float] = [0.0, 0.0]
 
         for i in range(8):
-            # TODO: verify that the angles actually match the sensors direction
-            # TODO: verify that the module arithmetic is correct (suppose to 
-            # handle the edges of the sensor array)
-            angle: float = 2 * math.pi * i / ((i + 1) % 8)
-            value: float = self.proximity_sensors_array[7 - i].getValue() + self.proximity_sensors_array[7 - i - 1].getValue()
-            if self.radius <= value and value <= self.radius + self.margin:
-                proximity_readings.append((value * math.cos(angle), value * math.sin(angle)))
+            angle: float = 2 * math.pi * i / 8
+            value: float = (
+                self.proximity_sensors_array[7 - i].getValue() + 
+                self.proximity_sensors_array[7 - i - 1].getValue()
+            ) / 2
+
+            if value > self.proximity_threshold and value <= self.proximity_threshold + self.proximity_threshold_margin:
+                result[0] += value * math.cos(angle)
+                result[1] += value * math.sin(angle)
 
         result: list[float] = [0.0, 0.0]
         # Sum all the distance vector, to get the resulting one
-        for reading in proximity_readings:
-            result[0] += reading[0]
-            result[1] += reading[1]
+        result[0] = -result[0]
+        result[1] = -result[1]
 
         # Normalise the resulting vector
-        norm: float = math.sqrt(result[0]**2 + result[1]**2)
+        norm: float = math.sqrt(result[0] ** 2 + result[1] ** 2)
+
+        if norm == 0.0:
+            return (0.0, 0.0)
+
         result[0] /= norm
         result[1] /= norm
 

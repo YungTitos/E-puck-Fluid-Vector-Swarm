@@ -8,8 +8,8 @@ IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R20
 WorldInfo {
 }
 Viewpoint {
-  orientation -0.5773502691896257 0.5773502691896257 0.5773502691896257 2.0944
-  position -9.255375563251302e-06 -9.255401734028961e-06 6.726808822418403
+  orientation -0.40409043448264903 0.2438193948030473 0.8816252171288546 2.16383473594885
+  position 5.630482475276787 -11.10995581234735 14.988318139581992
 }
 TexturedBackground {
 }
@@ -18,6 +18,10 @@ TexturedBackgroundLight {
 }
 RectangleArena {
   floorSize 3 2
+}
+E-puck {
+  translation -1.01 -0.7 0
+  controller "robot_particle"
 }
 PointLight {
   attenuation 0 0 1

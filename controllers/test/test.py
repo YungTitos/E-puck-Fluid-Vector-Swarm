@@ -25,7 +25,7 @@ class RobotParticle:
             w_noise: float = 1.0,
             light_stop_threashold: int = 5000,
             proximity_threshold: int = 120,
-            proximity_threshold_margin: int = 69
+            proximity_threshold_margin: int = 60
         ):
         self.controller: Robot = Robot()
         self.left_motor: Motor = cast(Motor, self.controller.getDevice("left wheel motor"))
@@ -124,7 +124,7 @@ class RobotParticle:
 
         self.controller.step(self.motion_time_step)
         """
-        
+        """
         # Direction vector decoding
         # TODO: chek correct bahaviour, if the force point backwards
         forward = direction_vector[0]
@@ -136,6 +136,7 @@ class RobotParticle:
 
         if self.controller.step(self.motion_time_step) == -1:
             return False
+        """
 
         return True
 
@@ -166,6 +167,10 @@ class RobotParticle:
     def __get_separation_vector(self) -> tuple[float, float]:
         result: list[float] = [0.0, 0.0]
 
+        print()
+        print("="*20)
+        print()
+
         for i in range(8):
             angle: float = 2 * math.pi * i / 8
             value: float = (
@@ -173,7 +178,9 @@ class RobotParticle:
                 self.proximity_sensors_array[7 - i - 1].getValue()
             ) / 2
 
-            if value >= self.proximity_threshold:
+            print(value)
+
+            if value <= self.proximity_threshold:
                 result[0] += value * math.cos(angle)
                 result[1] += value * math.sin(angle)
 
@@ -203,7 +210,7 @@ class RobotParticle:
                 self.proximity_sensors_array[7 - i - 1].getValue()
             ) / 2
 
-            if value >= self.proximity_threshold_margin and value <= self.proximity_threshold:
+            if value > self.proximity_threshold and value <= self.proximity_threshold + self.proximity_threshold_margin:
                 result[0] += value * math.cos(angle)
                 result[1] += value * math.sin(angle)
 

@@ -2,7 +2,6 @@ import random
 import optuna
 import json
 from controller import Supervisor
-import csv
 
 # SETUP AND CONSTANTS 
 supervisor = Supervisor()
@@ -16,13 +15,10 @@ ARENA_Y = 2.0
 WALL_X = 0.0
 
 WEIGHTS = {
-    "w_alignment": 1.0,
-    "w_separation": 3.0,
-    "w_cohesion": 1.0,
-    "w_noise": 0.5,
-    "proximity_threshold": 120,
-    "proximity_threshold_margin": 69,
-    "light_stop_threshold": 5000
+    "W_LIGHT": 0.0005,
+    "W_PROX": 0.00005,
+    "W_SLIDE": 0.01,
+    "W_NOISE": 1.5,
 }
 
 spawned_nodes = [] 
@@ -111,7 +107,7 @@ def run_scenario(num_robots, num_holes, custom_data_str):
             node = spawned_nodes[i] 
             if node is not None:
                 pos = node.getPosition()
-                if pos[0] > 0.1: 
+                if pos[0] > 1.0: 
                     finished_count += 1
                     
         if finished_count == num_robots:
@@ -131,7 +127,7 @@ def run_single_simulation(params, num_robots=None, num_holes=None):
     if num_holes is None:
         num_holes = random.randint(2, 4)
         
-    custom_data_str = ",".join(map(str, params))
+    custom_data_str = f"{params[0]},{params[1]},{params[2]},{params[3]}"
     
     print(f"\nStarting Single Simulation ({num_robots}R/{num_holes}H)", flush=True)
     
@@ -142,8 +138,14 @@ def run_single_simulation(params, num_robots=None, num_holes=None):
 
 def single_simulation():
     """Runs a single test with explicitly defined parameters."""
+    
     test_params = list(WEIGHTS.values())
+    
+    # Completely random number of robots and holes
     run_single_simulation(test_params)
+    
+    # Option B: Specific number of robots and holes (e.g., 8 robots, 3 holes)
+    # run_single_simulation(test_params, num_robots=8, num_holes=3)
 
 # EVALUATION AND OPTIMIZATION
 
@@ -151,7 +153,7 @@ def evaluate_parameters(params, trial=None):
     """
     Evaluates a specific set of parameters across all scenarios
     """
-    custom_data_str = f"{params['w_alignment']},{params['w_separation']},{params['w_cohesion']},{params['w_noise']},{params['proximity_threshold']},{params['proximity_threshold_margin']},{params['light_stop_threshold']}"
+    custom_data_str = f"{params['w_light']},{params['w_prox']},{params['w_slide']},{params['w_noise']}"
     total_score = 0
     
     run_name = f"Trial {trial.number}" if trial else "Manual Full Gauntlet"
@@ -173,7 +175,7 @@ def evaluate_parameters(params, trial=None):
             flush=True,
         )
 
-        # Kill switch
+        # Kill switch: Prune the run if a robot fails
         if failed_robots > 0:
             remaining_scenarios = len(all_scenarios) - (step + 1)
             penalty = remaining_scenarios * 300  
@@ -181,6 +183,7 @@ def evaluate_parameters(params, trial=None):
             
             print(f"  [EARLY STOP] Parameters failed the Gauntlet. Penalty applied.", flush=True)
             
+            # If we are in an Optuna trial, raise the prune exception
             if trial is not None:
                 raise optuna.TrialPruned()
             else:
@@ -192,17 +195,11 @@ def evaluate_parameters(params, trial=None):
 
 def optuna_objective(trial):
     """Optuna objective function wrapper."""
-    
-    prox_thresh = trial.suggest_int("proximity_threshold", 80, 500)
-    prox_margin = trial.suggest_int("proximity_threshold_margin", 10, max(11, prox_thresh - 10))
     params = {
-        "w_alignment": trial.suggest_float("w_alignment", 0.5, 3.0),
-        "w_separation": trial.suggest_float("w_separation", 2.0, 5.0),
-        "w_cohesion": trial.suggest_float("w_cohesion", 0.0, 2.0),
-        "w_noise": trial.suggest_float("w_noise", 0.1, 1.0),
-        "proximity_threshold": prox_thresh,
-        "proximity_threshold_margin": prox_margin,
-        "light_stop_threshold": trial.suggest_int("light_stop_threshold", 1000, 8000)
+        "w_light": trial.suggest_float("w_light", 1e-5, 1e-3, log=True),
+        "w_prox": trial.suggest_float("w_prox", 1e-6, 1e-4, log=True),
+        "w_slide": trial.suggest_float("w_slide", 1e-3, 5e-2, log=True),
+        "w_noise": trial.suggest_float("w_noise", 0.1, 3.0)
     }
     return evaluate_parameters(params, trial=trial)
 
@@ -250,13 +247,10 @@ def data_collection_mode():
 
     # Best values printed by Optuna
     best_params = {
-        "w_alignment": 1.5,
-        "w_separation": 3.2,
-        "w_cohesion": 1.1,
-        "w_noise": 0.4,
-        "proximity_threshold": 150,
-        "proximity_threshold_margin": 40,
-        "light_stop_threshold": 5000
+        "w_light": 0.00035064081371168326,
+        "w_prox": 7.652504295632288e-05,
+        "w_slide": 0.0012960190610422663,
+        "w_noise": 1.6244235549045687
     }
     
     custom_data_str = ",".join(str(v) for v in best_params.values())
@@ -315,7 +309,7 @@ if __name__ == "__main__":
     # "Optimization"      : 2
     # "Data Collection"   : 3
     # ==========================================
-    EXECUTION_MODE = 1
+    EXECUTION_MODE = 2
     
     if EXECUTION_MODE == 1:
         single_simulation()

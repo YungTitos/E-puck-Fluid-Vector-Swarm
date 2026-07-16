@@ -16,13 +16,10 @@ ARENA_Y = 2.0
 WALL_X = 0.0
 
 WEIGHTS = {
-    "w_alignment": 1.0,
-    "w_separation": 3.0,
-    "w_cohesion": 1.0,
-    "w_noise": 0.5,
-    "proximity_threshold": 120,
-    "proximity_threshold_margin": 69,
-    "light_stop_threshold": 5000
+    "w_light": 0.00035064081371168326,
+    "w_prox": 0.00007652504295632288,
+    "w_slide": 0.0012960190610422663,
+    "w_noise": 1.6244235549045687
 }
 
 spawned_nodes = [] 
@@ -151,7 +148,7 @@ def evaluate_parameters(params, trial=None):
     """
     Evaluates a specific set of parameters across all scenarios
     """
-    custom_data_str = f"{params['w_alignment']},{params['w_separation']},{params['w_cohesion']},{params['w_noise']},{params['proximity_threshold']},{params['proximity_threshold_margin']},{params['light_stop_threshold']}"
+    custom_data_str = f"{params['w_light']},{params['w_prox']},{params['w_slide']},{params['w_noise']}"
     total_score = 0
     
     run_name = f"Trial {trial.number}" if trial else "Manual Full Gauntlet"
@@ -192,17 +189,11 @@ def evaluate_parameters(params, trial=None):
 
 def optuna_objective(trial):
     """Optuna objective function wrapper."""
-    
-    prox_thresh = trial.suggest_int("proximity_threshold", 80, 500)
-    prox_margin = trial.suggest_int("proximity_threshold_margin", 10, max(11, prox_thresh - 10))
     params = {
-        "w_alignment": trial.suggest_float("w_alignment", 0.5, 3.0),
-        "w_separation": trial.suggest_float("w_separation", 2.0, 5.0),
-        "w_cohesion": trial.suggest_float("w_cohesion", 0.0, 2.0),
-        "w_noise": trial.suggest_float("w_noise", 0.1, 1.0),
-        "proximity_threshold": prox_thresh,
-        "proximity_threshold_margin": prox_margin,
-        "light_stop_threshold": trial.suggest_int("light_stop_threshold", 1000, 8000)
+        "w_light": trial.suggest_float("w_light", 1e-5, 1e-3, log=True),
+        "w_prox": trial.suggest_float("w_prox", 1e-6, 1e-4, log=True),
+        "w_slide": trial.suggest_float("w_slide", 1e-3, 5e-2, log=True),
+        "w_noise": trial.suggest_float("w_noise", 0.1, 3.0)
     }
     return evaluate_parameters(params, trial=trial)
 
@@ -250,13 +241,10 @@ def data_collection_mode():
 
     # Best values printed by Optuna
     best_params = {
-        "w_alignment": 1.5,
-        "w_separation": 3.2,
-        "w_cohesion": 1.1,
-        "w_noise": 0.4,
-        "proximity_threshold": 150,
-        "proximity_threshold_margin": 40,
-        "light_stop_threshold": 5000
+        "w_light": 0.00035064081371168326,
+        "w_prox": 0.00007652504295632288,
+        "w_slide": 0.0012960190610422663,
+        "w_noise": 1.6244235549045687
     }
     
     custom_data_str = ",".join(str(v) for v in best_params.values())
@@ -314,14 +302,18 @@ if __name__ == "__main__":
     # "Single Simulation" : 1
     # "Optimization"      : 2
     # "Data Collection"   : 3
+    # "Overnight (2 and 3 together)": 4
     # ==========================================
-    EXECUTION_MODE = 1
+    EXECUTION_MODE = 3
     
     if EXECUTION_MODE == 1:
         single_simulation()
     elif EXECUTION_MODE == 2:
-        optimization_pipeline(n_trials=50)
+        optimization_pipeline(n_trials=100)
     elif EXECUTION_MODE == 3:
+        data_collection_mode()
+    elif EXECUTION_MODE == 4:
+        optimization_pipeline(n_trials=100)
         data_collection_mode()
     else:
         print("Invalid EXECUTION_MODE selected.")

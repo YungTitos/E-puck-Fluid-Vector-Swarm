@@ -2,7 +2,6 @@ import random
 import optuna
 import json
 from controller import Supervisor
-import csv
 
 # SETUP AND CONSTANTS 
 supervisor = Supervisor()
@@ -95,22 +94,29 @@ def run_scenario(num_robots, num_holes, custom_data_str):
         current_y += segment_length + HOLE_WIDTH
 
     # Run sub-simulation
-    MAX_SECONDS = 120  
+    MAX_SECONDS = 90 # 1.5 minutes 
     max_ticks = int((MAX_SECONDS * 1000) / timestep)
     ticks = 0
     finished_count = 0
     
+    announced = set()
+
     while supervisor.step(timestep) != -1 and ticks < max_ticks:
-        ticks += 1
-        finished_count = 0
         
+        finished_count = 0
+
         for i in range(num_robots):
-            node = spawned_nodes[i] 
+            node = spawned_nodes[i]
             if node is not None:
                 pos = node.getPosition()
-                if pos[0] > 0.1: 
+                if pos[0] > 0.1:
                     finished_count += 1
-                    
+                    if i not in announced:
+                        print("Robot successfully reached the target zone!", flush=True)
+                        announced.add(i)
+
+        ticks += 1
+
         if finished_count == num_robots:
             break 
 
@@ -150,6 +156,7 @@ def evaluate_parameters(params, trial=None):
     """
     custom_data_str = f"{params['w_light']},{params['w_prox']},{params['w_slide']},{params['w_noise']}"
     total_score = 0
+    step_history = []  # Initialize history list
     
     run_name = f"Trial {trial.number}" if trial else "Manual Full Gauntlet"
     print(f"\nStarting {run_name}", flush=True)
@@ -165,23 +172,45 @@ def evaluate_parameters(params, trial=None):
         sub_score = time_taken + (failed_robots * 50) 
         total_score += sub_score
         
+        # Record history for JSON export
+        step_history.append({
+            "step": step + 1, 
+            "scenario": f"{num_robots}R/{num_holes}H", 
+            "time_taken": time_taken, 
+            "failed_robots": failed_robots,
+            "sub_score": sub_score,
+            "accumulated_score": total_score
+        })
+        
         print(
             f"  Step {step+1}/{len(all_scenarios)} ({num_robots}R/{num_holes}H) | Time: {time_taken:.1f}s | Failed: {failed_robots}",
             flush=True,
         )
 
-        # Kill switch
+        # Hard Kill Switch (Manual Pruning for Failures)
         if failed_robots > 0:
             remaining_scenarios = len(all_scenarios) - (step + 1)
             penalty = remaining_scenarios * 300  
             total_score += penalty
-            
             print(f"  [EARLY STOP] Parameters failed the Gauntlet. Penalty applied.", flush=True)
             
             if trial is not None:
+                trial.set_user_attr("step_history", step_history) # Save history before pruning
                 raise optuna.TrialPruned()
             else:
                 break
+                
+        # Soft Kill Switch (Optuna MedianPruner for slow but successful runs)
+        if trial is not None:
+            trial.report(total_score, step) # Give Optuna the data it needs to calculate medians
+            if trial.should_prune():
+                print(f"  [PRUNED] Trial is slower than the median of previous trials.", flush=True)
+                trial.set_user_attr("step_history", step_history) # Save history before pruning
+                raise optuna.TrialPruned()
+
+    # Save history for successful completions
+    if trial is not None:
+        trial.set_user_attr("step_history", step_history)
 
     print(f"{run_name} Finished -> Total Score: {total_score:.2f}", flush=True)
     return total_score
@@ -190,7 +219,7 @@ def evaluate_parameters(params, trial=None):
 def optuna_objective(trial):
     """Optuna objective function wrapper."""
     params = {
-        "w_light": trial.suggest_float("w_light", 1e-5, 1e-3, log=True),
+        "w_light": trial.suggest_float("w_light", 1e-6, 1e-3, log=True),
         "w_prox": trial.suggest_float("w_prox", 1e-6, 1e-4, log=True),
         "w_slide": trial.suggest_float("w_slide", 1e-3, 5e-2, log=True),
         "w_noise": trial.suggest_float("w_noise", 0.1, 3.0)
@@ -233,22 +262,23 @@ def optimization_pipeline(n_trials=200):
 
     print(f"Saved to '{json_filename}'")
 
-def data_collection_mode():
+    return study.best_params
+
+def data_collection_mode(params_to_test=None):
     """
     Statistical evaluation using the best parameters found by Optuna.
+    If no params are passed, it defaults to the global WEIGHTS.
     """
     print("STARTING DATA COLLECTION EXPERIMENTS")
 
-    # Best values printed by Optuna
-    best_params = {
-        "w_light": 0.00035064081371168326,
-        "w_prox": 0.00007652504295632288,
-        "w_slide": 0.0012960190610422663,
-        "w_noise": 1.6244235549045687
-    }
+    if params_to_test is None:
+        params_to_test = WEIGHTS
+        print("Using global WEIGHTS for data collection.")
+    else:
+        print("Using newly optimized parameters for data collection.")
     
-    custom_data_str = ",".join(str(v) for v in best_params.values())
-    RUNS_PER_SETUP = 5  # Run each configuration 5 times to average out random spawn luck
+    custom_data_str = ",".join(str(v) for v in params_to_test.values())
+    RUNS_PER_SETUP = 5 # Run each configuration 5 times to average out random spawn luck
     
     experiments = {
         "sweep_robots": [], # Fix holes=2, vary robots 6->12
@@ -295,7 +325,6 @@ def data_collection_mode():
         json.dump(experiments, f, indent=4)
     print(f"Saved to 'final_evaluation_data.json'")
 
- 
 if __name__ == "__main__":
     # ==========================================
     # TOGGLE THIS VARIABLE TO CHANGE MODES
@@ -304,7 +333,7 @@ if __name__ == "__main__":
     # "Data Collection"   : 3
     # "Overnight (2 and 3 together)": 4
     # ==========================================
-    EXECUTION_MODE = 3
+    EXECUTION_MODE = 4
     
     if EXECUTION_MODE == 1:
         single_simulation()
@@ -313,8 +342,8 @@ if __name__ == "__main__":
     elif EXECUTION_MODE == 3:
         data_collection_mode()
     elif EXECUTION_MODE == 4:
-        optimization_pipeline(n_trials=100)
-        data_collection_mode()
+        best_found = optimization_pipeline(n_trials=100) 
+        data_collection_mode(best_found)
     else:
         print("Invalid EXECUTION_MODE selected.")
 

@@ -1,0 +1,4015 @@
+{
+    "best_score": 528.1919999999999,
+    "best_params": {
+        "w_light": 0.0002858981547083228,
+        "w_prox": 9.995923141621381e-05,
+        "w_slide": 0.00841904047236007,
+        "w_noise": 1.3888724771710583
+    },
+    "all_trials": [
+        {
+            "trial_number": 0,
+            "state": "TrialState.PRUNED",
+            "final_score": -1,
+            "params": {
+                "w_light": 0.000195916564455329,
+                "w_prox": 4.262944176361993e-05,
+                "w_slide": 0.024481190212427367,
+                "w_noise": 2.1353093648472004
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 2,
+                    "sub_score": 189.984,
+                    "accumulated_score": 189.984
+                }
+            ]
+        },
+        {
+            "trial_number": 1,
+            "state": "TrialState.PRUNED",
+            "final_score": -1,
+            "params": {
+                "w_light": 2.5558335323593486e-05,
+                "w_prox": 1.7824788881461197e-06,
+                "w_slide": 0.008217440410056967,
+                "w_noise": 1.3026875725907974
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 5,
+                    "sub_score": 339.98400000000004,
+                    "accumulated_score": 339.98400000000004
+                }
+            ]
+        },
+        {
+            "trial_number": 2,
+            "state": "TrialState.PRUNED",
+            "final_score": -1,
+            "params": {
+                "w_light": 2.7953226580008287e-05,
+                "w_prox": 4.072061079456692e-06,
+                "w_slide": 0.001902124654879932,
+                "w_noise": 1.455818574485507
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 5,
+                    "sub_score": 339.98400000000004,
+                    "accumulated_score": 339.98400000000004
+                }
+            ]
+        },
+        {
+            "trial_number": 3,
+            "state": "TrialState.PRUNED",
+            "final_score": -1,
+            "params": {
+                "w_light": 2.0811149504949925e-05,
+                "w_prox": 2.1250493697726667e-06,
+                "w_slide": 0.0029207063778779467,
+                "w_noise": 0.18765828813444196
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 3,
+                    "sub_score": 239.984,
+                    "accumulated_score": 239.984
+                }
+            ]
+        },
+        {
+            "trial_number": 4,
+            "state": "TrialState.PRUNED",
+            "final_score": -1,
+            "params": {
+                "w_light": 0.0002184872882750638,
+                "w_prox": 8.304298790451063e-05,
+                "w_slide": 0.011104999693458982,
+                "w_noise": 2.92539445494428
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 1,
+                    "sub_score": 139.984,
+                    "accumulated_score": 139.984
+                }
+            ]
+        },
+        {
+            "trial_number": 5,
+            "state": "TrialState.PRUNED",
+            "final_score": -1,
+            "params": {
+                "w_light": 0.0003168010802450897,
+                "w_prox": 2.1290154491737903e-06,
+                "w_slide": 0.002198544955069641,
+                "w_noise": 1.0818458317467408
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 5,
+                    "sub_score": 339.98400000000004,
+                    "accumulated_score": 339.98400000000004
+                }
+            ]
+        },
+        {
+            "trial_number": 6,
+            "state": "TrialState.PRUNED",
+            "final_score": -1,
+            "params": {
+                "w_light": 0.0007412211698926118,
+                "w_prox": 4.4848090814081395e-05,
+                "w_slide": 0.04891334535070243,
+                "w_noise": 2.9871821300213934
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 1,
+                    "sub_score": 139.984,
+                    "accumulated_score": 139.984
+                }
+            ]
+        },
+        {
+            "trial_number": 7,
+            "state": "TrialState.PRUNED",
+            "final_score": -1,
+            "params": {
+                "w_light": 1.7544867174259065e-06,
+                "w_prox": 6.4296790915752685e-06,
+                "w_slide": 0.015321770827398643,
+                "w_noise": 2.090291329448322
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 8,
+                    "sub_score": 489.98400000000004,
+                    "accumulated_score": 489.98400000000004
+                }
+            ]
+        },
+        {
+            "trial_number": 8,
+            "state": "TrialState.PRUNED",
+            "final_score": -1,
+            "params": {
+                "w_light": 7.839761574028698e-06,
+                "w_prox": 2.66601662344572e-06,
+                "w_slide": 0.0013163594373828867,
+                "w_noise": 0.2988037969931819
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 6,
+                    "sub_score": 389.98400000000004,
+                    "accumulated_score": 389.98400000000004
+                }
+            ]
+        },
+        {
+            "trial_number": 9,
+            "state": "TrialState.PRUNED",
+            "final_score": -1,
+            "params": {
+                "w_light": 3.659175821315629e-06,
+                "w_prox": 9.106635890889731e-05,
+                "w_slide": 0.010285283767903004,
+                "w_noise": 2.232550239160589
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 10,
+                    "sub_score": 589.984,
+                    "accumulated_score": 589.984
+                }
+            ]
+        },
+        {
+            "trial_number": 10,
+            "state": "TrialState.PRUNED",
+            "final_score": -1,
+            "params": {
+                "w_light": 0.00013070477167031157,
+                "w_prox": 1.9332125892914573e-05,
+                "w_slide": 0.0343562336424842,
+                "w_noise": 2.097618249000275
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 2,
+                    "sub_score": 189.984,
+                    "accumulated_score": 189.984
+                }
+            ]
+        },
+        {
+            "trial_number": 11,
+            "state": "TrialState.PRUNED",
+            "final_score": -1,
+            "params": {
+                "w_light": 8.10310527606924e-05,
+                "w_prox": 1.4161456179473521e-05,
+                "w_slide": 0.004759786029496375,
+                "w_noise": 1.03008902004366
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 1,
+                    "sub_score": 139.984,
+                    "accumulated_score": 139.984
+                }
+            ]
+        },
+        {
+            "trial_number": 12,
+            "state": "TrialState.PRUNED",
+            "final_score": -1,
+            "params": {
+                "w_light": 6.499518839679302e-05,
+                "w_prox": 1.15642639758395e-06,
+                "w_slide": 0.02180870378511143,
+                "w_noise": 1.600158697309476
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 3,
+                    "sub_score": 239.984,
+                    "accumulated_score": 239.984
+                }
+            ]
+        },
+        {
+            "trial_number": 13,
+            "state": "TrialState.PRUNED",
+            "final_score": -1,
+            "params": {
+                "w_light": 1.3189247361049621e-05,
+                "w_prox": 2.854567058036676e-05,
+                "w_slide": 0.00686060344115169,
+                "w_noise": 2.4598442428151053
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 9,
+                    "sub_score": 539.984,
+                    "accumulated_score": 539.984
+                }
+            ]
+        },
+        {
+            "trial_number": 14,
+            "state": "TrialState.PRUNED",
+            "final_score": -1,
+            "params": {
+                "w_light": 0.0009161172198935643,
+                "w_prox": 7.88874389253775e-06,
+                "w_slide": 0.02323492292646646,
+                "w_noise": 1.6475949893595274
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 3,
+                    "sub_score": 239.984,
+                    "accumulated_score": 239.984
+                }
+            ]
+        },
+        {
+            "trial_number": 15,
+            "state": "TrialState.PRUNED",
+            "final_score": -1,
+            "params": {
+                "w_light": 5.3438397987511984e-05,
+                "w_prox": 1.075108464701306e-06,
+                "w_slide": 0.006729797168902242,
+                "w_noise": 0.7493189594072124
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 4,
+                    "sub_score": 289.98400000000004,
+                    "accumulated_score": 289.98400000000004
+                }
+            ]
+        },
+        {
+            "trial_number": 16,
+            "state": "TrialState.PRUNED",
+            "final_score": 49.824,
+            "params": {
+                "w_light": 0.0003531530916505306,
+                "w_prox": 4.011213397179726e-05,
+                "w_slide": 0.004414870661191202,
+                "w_noise": 1.304889631374484
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 49.824,
+                    "failed_robots": 0,
+                    "sub_score": 49.824,
+                    "accumulated_score": 49.824
+                },
+                {
+                    "step": 2,
+                    "scenario": "9R/2H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 1,
+                    "sub_score": 139.984,
+                    "accumulated_score": 189.808
+                }
+            ]
+        },
+        {
+            "trial_number": 17,
+            "state": "TrialState.COMPLETE",
+            "final_score": 680.448,
+            "params": {
+                "w_light": 0.000270544126499156,
+                "w_prox": 5.2647376659421934e-05,
+                "w_slide": 0.004549405186533723,
+                "w_noise": 1.8812142181323734
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 71.968,
+                    "failed_robots": 0,
+                    "sub_score": 71.968,
+                    "accumulated_score": 71.968
+                },
+                {
+                    "step": 2,
+                    "scenario": "9R/2H",
+                    "time_taken": 48.032000000000004,
+                    "failed_robots": 0,
+                    "sub_score": 48.032000000000004,
+                    "accumulated_score": 120.0
+                },
+                {
+                    "step": 3,
+                    "scenario": "8R/2H",
+                    "time_taken": 55.68,
+                    "failed_robots": 0,
+                    "sub_score": 55.68,
+                    "accumulated_score": 175.68
+                },
+                {
+                    "step": 4,
+                    "scenario": "7R/2H",
+                    "time_taken": 58.08,
+                    "failed_robots": 0,
+                    "sub_score": 58.08,
+                    "accumulated_score": 233.76
+                },
+                {
+                    "step": 5,
+                    "scenario": "10R/3H",
+                    "time_taken": 41.504,
+                    "failed_robots": 0,
+                    "sub_score": 41.504,
+                    "accumulated_score": 275.264
+                },
+                {
+                    "step": 6,
+                    "scenario": "6R/2H",
+                    "time_taken": 54.24,
+                    "failed_robots": 0,
+                    "sub_score": 54.24,
+                    "accumulated_score": 329.504
+                },
+                {
+                    "step": 7,
+                    "scenario": "9R/3H",
+                    "time_taken": 44.032000000000004,
+                    "failed_robots": 0,
+                    "sub_score": 44.032000000000004,
+                    "accumulated_score": 373.536
+                },
+                {
+                    "step": 8,
+                    "scenario": "8R/3H",
+                    "time_taken": 40.384,
+                    "failed_robots": 0,
+                    "sub_score": 40.384,
+                    "accumulated_score": 413.92
+                },
+                {
+                    "step": 9,
+                    "scenario": "10R/4H",
+                    "time_taken": 36.96,
+                    "failed_robots": 0,
+                    "sub_score": 36.96,
+                    "accumulated_score": 450.88
+                },
+                {
+                    "step": 10,
+                    "scenario": "7R/3H",
+                    "time_taken": 45.92,
+                    "failed_robots": 0,
+                    "sub_score": 45.92,
+                    "accumulated_score": 496.8
+                },
+                {
+                    "step": 11,
+                    "scenario": "9R/4H",
+                    "time_taken": 31.264,
+                    "failed_robots": 0,
+                    "sub_score": 31.264,
+                    "accumulated_score": 528.064
+                },
+                {
+                    "step": 12,
+                    "scenario": "6R/3H",
+                    "time_taken": 48.576,
+                    "failed_robots": 0,
+                    "sub_score": 48.576,
+                    "accumulated_score": 576.64
+                },
+                {
+                    "step": 13,
+                    "scenario": "8R/4H",
+                    "time_taken": 34.24,
+                    "failed_robots": 0,
+                    "sub_score": 34.24,
+                    "accumulated_score": 610.88
+                },
+                {
+                    "step": 14,
+                    "scenario": "7R/4H",
+                    "time_taken": 34.112,
+                    "failed_robots": 0,
+                    "sub_score": 34.112,
+                    "accumulated_score": 644.992
+                },
+                {
+                    "step": 15,
+                    "scenario": "6R/4H",
+                    "time_taken": 35.456,
+                    "failed_robots": 0,
+                    "sub_score": 35.456,
+                    "accumulated_score": 680.448
+                }
+            ]
+        },
+        {
+            "trial_number": 18,
+            "state": "TrialState.PRUNED",
+            "final_score": -1,
+            "params": {
+                "w_light": 0.0003464244327479777,
+                "w_prox": 4.6553182059299277e-05,
+                "w_slide": 0.00450843754135079,
+                "w_noise": 0.7371126135314592
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 2,
+                    "sub_score": 189.984,
+                    "accumulated_score": 189.984
+                }
+            ]
+        },
+        {
+            "trial_number": 19,
+            "state": "TrialState.PRUNED",
+            "final_score": 93.344,
+            "params": {
+                "w_light": 0.0005780183236726811,
+                "w_prox": 2.4281425442712537e-05,
+                "w_slide": 0.004049767992957051,
+                "w_noise": 1.8548767702551638
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 56.704,
+                    "failed_robots": 0,
+                    "sub_score": 56.704,
+                    "accumulated_score": 56.704
+                },
+                {
+                    "step": 2,
+                    "scenario": "9R/2H",
+                    "time_taken": 36.64,
+                    "failed_robots": 0,
+                    "sub_score": 36.64,
+                    "accumulated_score": 93.344
+                },
+                {
+                    "step": 3,
+                    "scenario": "8R/2H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 1,
+                    "sub_score": 139.984,
+                    "accumulated_score": 233.328
+                }
+            ]
+        },
+        {
+            "trial_number": 20,
+            "state": "TrialState.PRUNED",
+            "final_score": -1,
+            "params": {
+                "w_light": 0.0005892895920762818,
+                "w_prox": 1.53114692725615e-05,
+                "w_slide": 0.0010680086002707058,
+                "w_noise": 1.838940145511853
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 7,
+                    "sub_score": 439.98400000000004,
+                    "accumulated_score": 439.98400000000004
+                }
+            ]
+        },
+        {
+            "trial_number": 21,
+            "state": "TrialState.PRUNED",
+            "final_score": 428.60800000000006,
+            "params": {
+                "w_light": 0.0004380761165330971,
+                "w_prox": 2.838379949555535e-05,
+                "w_slide": 0.0037529174650490983,
+                "w_noise": 1.8097857252536689
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 51.392,
+                    "failed_robots": 0,
+                    "sub_score": 51.392,
+                    "accumulated_score": 51.392
+                },
+                {
+                    "step": 2,
+                    "scenario": "9R/2H",
+                    "time_taken": 33.568,
+                    "failed_robots": 0,
+                    "sub_score": 33.568,
+                    "accumulated_score": 84.96000000000001
+                },
+                {
+                    "step": 3,
+                    "scenario": "8R/2H",
+                    "time_taken": 48.608000000000004,
+                    "failed_robots": 0,
+                    "sub_score": 48.608000000000004,
+                    "accumulated_score": 133.568
+                },
+                {
+                    "step": 4,
+                    "scenario": "7R/2H",
+                    "time_taken": 52.896,
+                    "failed_robots": 0,
+                    "sub_score": 52.896,
+                    "accumulated_score": 186.464
+                },
+                {
+                    "step": 5,
+                    "scenario": "10R/3H",
+                    "time_taken": 36.032000000000004,
+                    "failed_robots": 0,
+                    "sub_score": 36.032000000000004,
+                    "accumulated_score": 222.496
+                },
+                {
+                    "step": 6,
+                    "scenario": "6R/2H",
+                    "time_taken": 48.512,
+                    "failed_robots": 0,
+                    "sub_score": 48.512,
+                    "accumulated_score": 271.00800000000004
+                },
+                {
+                    "step": 7,
+                    "scenario": "9R/3H",
+                    "time_taken": 36.512,
+                    "failed_robots": 0,
+                    "sub_score": 36.512,
+                    "accumulated_score": 307.52000000000004
+                },
+                {
+                    "step": 8,
+                    "scenario": "8R/3H",
+                    "time_taken": 47.072,
+                    "failed_robots": 0,
+                    "sub_score": 47.072,
+                    "accumulated_score": 354.59200000000004
+                },
+                {
+                    "step": 9,
+                    "scenario": "10R/4H",
+                    "time_taken": 38.464,
+                    "failed_robots": 0,
+                    "sub_score": 38.464,
+                    "accumulated_score": 393.05600000000004
+                },
+                {
+                    "step": 10,
+                    "scenario": "7R/3H",
+                    "time_taken": 35.552,
+                    "failed_robots": 0,
+                    "sub_score": 35.552,
+                    "accumulated_score": 428.60800000000006
+                },
+                {
+                    "step": 11,
+                    "scenario": "9R/4H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 1,
+                    "sub_score": 139.984,
+                    "accumulated_score": 568.5920000000001
+                }
+            ]
+        },
+        {
+            "trial_number": 22,
+            "state": "TrialState.PRUNED",
+            "final_score": -1,
+            "params": {
+                "w_light": 0.0005287459914107084,
+                "w_prox": 2.4062528287318674e-05,
+                "w_slide": 0.0032350030976046294,
+                "w_noise": 2.5504922423396823
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 2,
+                    "sub_score": 189.984,
+                    "accumulated_score": 189.984
+                }
+            ]
+        },
+        {
+            "trial_number": 23,
+            "state": "TrialState.PRUNED",
+            "final_score": 73.21600000000001,
+            "params": {
+                "w_light": 0.00012786374025487262,
+                "w_prox": 6.054030453520267e-05,
+                "w_slide": 0.003177945368252614,
+                "w_noise": 1.8142119634708023
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 73.21600000000001,
+                    "failed_robots": 0,
+                    "sub_score": 73.21600000000001,
+                    "accumulated_score": 73.21600000000001
+                },
+                {
+                    "step": 2,
+                    "scenario": "9R/2H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 1,
+                    "sub_score": 139.984,
+                    "accumulated_score": 213.20000000000002
+                }
+            ]
+        },
+        {
+            "trial_number": 24,
+            "state": "TrialState.PRUNED",
+            "final_score": -1,
+            "params": {
+                "w_light": 0.0009736551715366804,
+                "w_prox": 3.038746947003945e-05,
+                "w_slide": 0.0022258855258539697,
+                "w_noise": 1.8575725434422454
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 2,
+                    "sub_score": 189.984,
+                    "accumulated_score": 189.984
+                }
+            ]
+        },
+        {
+            "trial_number": 25,
+            "state": "TrialState.PRUNED",
+            "final_score": 86.688,
+            "params": {
+                "w_light": 0.00015687282719663176,
+                "w_prox": 1.3300818624746854e-05,
+                "w_slide": 0.005484867789100505,
+                "w_noise": 2.4479301896458527
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 86.688,
+                    "failed_robots": 0,
+                    "sub_score": 86.688,
+                    "accumulated_score": 86.688
+                },
+                {
+                    "step": 2,
+                    "scenario": "9R/2H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 1,
+                    "sub_score": 139.984,
+                    "accumulated_score": 226.67200000000003
+                }
+            ]
+        },
+        {
+            "trial_number": 26,
+            "state": "TrialState.PRUNED",
+            "final_score": -1,
+            "params": {
+                "w_light": 0.00045018318545677065,
+                "w_prox": 6.801357205113036e-05,
+                "w_slide": 0.003507109897251259,
+                "w_noise": 1.919882206492761
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 2,
+                    "sub_score": 189.984,
+                    "accumulated_score": 189.984
+                }
+            ]
+        },
+        {
+            "trial_number": 27,
+            "state": "TrialState.COMPLETE",
+            "final_score": 766.7519999999998,
+            "params": {
+                "w_light": 0.0002338734877443424,
+                "w_prox": 2.0122933052685934e-05,
+                "w_slide": 0.0014986886511691648,
+                "w_noise": 2.316650497061583
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 56.832,
+                    "failed_robots": 0,
+                    "sub_score": 56.832,
+                    "accumulated_score": 56.832
+                },
+                {
+                    "step": 2,
+                    "scenario": "9R/2H",
+                    "time_taken": 63.52,
+                    "failed_robots": 0,
+                    "sub_score": 63.52,
+                    "accumulated_score": 120.352
+                },
+                {
+                    "step": 3,
+                    "scenario": "8R/2H",
+                    "time_taken": 86.624,
+                    "failed_robots": 0,
+                    "sub_score": 86.624,
+                    "accumulated_score": 206.976
+                },
+                {
+                    "step": 4,
+                    "scenario": "7R/2H",
+                    "time_taken": 44.0,
+                    "failed_robots": 0,
+                    "sub_score": 44.0,
+                    "accumulated_score": 250.976
+                },
+                {
+                    "step": 5,
+                    "scenario": "10R/3H",
+                    "time_taken": 77.056,
+                    "failed_robots": 0,
+                    "sub_score": 77.056,
+                    "accumulated_score": 328.032
+                },
+                {
+                    "step": 6,
+                    "scenario": "6R/2H",
+                    "time_taken": 60.160000000000004,
+                    "failed_robots": 0,
+                    "sub_score": 60.160000000000004,
+                    "accumulated_score": 388.192
+                },
+                {
+                    "step": 7,
+                    "scenario": "9R/3H",
+                    "time_taken": 53.056000000000004,
+                    "failed_robots": 0,
+                    "sub_score": 53.056000000000004,
+                    "accumulated_score": 441.248
+                },
+                {
+                    "step": 8,
+                    "scenario": "8R/3H",
+                    "time_taken": 53.024,
+                    "failed_robots": 0,
+                    "sub_score": 53.024,
+                    "accumulated_score": 494.272
+                },
+                {
+                    "step": 9,
+                    "scenario": "10R/4H",
+                    "time_taken": 44.288000000000004,
+                    "failed_robots": 0,
+                    "sub_score": 44.288000000000004,
+                    "accumulated_score": 538.56
+                },
+                {
+                    "step": 10,
+                    "scenario": "7R/3H",
+                    "time_taken": 40.608000000000004,
+                    "failed_robots": 0,
+                    "sub_score": 40.608000000000004,
+                    "accumulated_score": 579.1679999999999
+                },
+                {
+                    "step": 11,
+                    "scenario": "9R/4H",
+                    "time_taken": 44.928000000000004,
+                    "failed_robots": 0,
+                    "sub_score": 44.928000000000004,
+                    "accumulated_score": 624.0959999999999
+                },
+                {
+                    "step": 12,
+                    "scenario": "6R/3H",
+                    "time_taken": 35.744,
+                    "failed_robots": 0,
+                    "sub_score": 35.744,
+                    "accumulated_score": 659.8399999999999
+                },
+                {
+                    "step": 13,
+                    "scenario": "8R/4H",
+                    "time_taken": 36.64,
+                    "failed_robots": 0,
+                    "sub_score": 36.64,
+                    "accumulated_score": 696.4799999999999
+                },
+                {
+                    "step": 14,
+                    "scenario": "7R/4H",
+                    "time_taken": 39.52,
+                    "failed_robots": 0,
+                    "sub_score": 39.52,
+                    "accumulated_score": 735.9999999999999
+                },
+                {
+                    "step": 15,
+                    "scenario": "6R/4H",
+                    "time_taken": 30.752,
+                    "failed_robots": 0,
+                    "sub_score": 30.752,
+                    "accumulated_score": 766.7519999999998
+                }
+            ]
+        },
+        {
+            "trial_number": 28,
+            "state": "TrialState.PRUNED",
+            "final_score": -1,
+            "params": {
+                "w_light": 4.7651594317268015e-05,
+                "w_prox": 9.664105295121325e-06,
+                "w_slide": 0.0015575527900769854,
+                "w_noise": 2.628679219848566
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 5,
+                    "sub_score": 339.98400000000004,
+                    "accumulated_score": 339.98400000000004
+                }
+            ]
+        },
+        {
+            "trial_number": 29,
+            "state": "TrialState.PRUNED",
+            "final_score": 202.08,
+            "params": {
+                "w_light": 0.000224749574312633,
+                "w_prox": 3.550437037287773e-05,
+                "w_slide": 0.0024699203123345254,
+                "w_noise": 2.2533329715209995
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 87.168,
+                    "failed_robots": 0,
+                    "sub_score": 87.168,
+                    "accumulated_score": 87.168
+                },
+                {
+                    "step": 2,
+                    "scenario": "9R/2H",
+                    "time_taken": 52.704,
+                    "failed_robots": 0,
+                    "sub_score": 52.704,
+                    "accumulated_score": 139.872
+                },
+                {
+                    "step": 3,
+                    "scenario": "8R/2H",
+                    "time_taken": 62.208,
+                    "failed_robots": 0,
+                    "sub_score": 62.208,
+                    "accumulated_score": 202.08
+                },
+                {
+                    "step": 4,
+                    "scenario": "7R/2H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 2,
+                    "sub_score": 189.984,
+                    "accumulated_score": 392.064
+                }
+            ]
+        },
+        {
+            "trial_number": 30,
+            "state": "TrialState.PRUNED",
+            "final_score": -1,
+            "params": {
+                "w_light": 9.385483054907411e-05,
+                "w_prox": 5.509018552570142e-05,
+                "w_slide": 0.0016845977518244748,
+                "w_noise": 2.779448383974346
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 6,
+                    "sub_score": 389.98400000000004,
+                    "accumulated_score": 389.98400000000004
+                }
+            ]
+        },
+        {
+            "trial_number": 31,
+            "state": "TrialState.COMPLETE",
+            "final_score": 725.856,
+            "params": {
+                "w_light": 0.0002436426781828725,
+                "w_prox": 3.3463557619297845e-05,
+                "w_slide": 0.0024242754873007046,
+                "w_noise": 2.275394694376768
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 87.744,
+                    "failed_robots": 0,
+                    "sub_score": 87.744,
+                    "accumulated_score": 87.744
+                },
+                {
+                    "step": 2,
+                    "scenario": "9R/2H",
+                    "time_taken": 52.608000000000004,
+                    "failed_robots": 0,
+                    "sub_score": 52.608000000000004,
+                    "accumulated_score": 140.352
+                },
+                {
+                    "step": 3,
+                    "scenario": "8R/2H",
+                    "time_taken": 50.208,
+                    "failed_robots": 0,
+                    "sub_score": 50.208,
+                    "accumulated_score": 190.56
+                },
+                {
+                    "step": 4,
+                    "scenario": "7R/2H",
+                    "time_taken": 42.208,
+                    "failed_robots": 0,
+                    "sub_score": 42.208,
+                    "accumulated_score": 232.768
+                },
+                {
+                    "step": 5,
+                    "scenario": "10R/3H",
+                    "time_taken": 45.28,
+                    "failed_robots": 0,
+                    "sub_score": 45.28,
+                    "accumulated_score": 278.048
+                },
+                {
+                    "step": 6,
+                    "scenario": "6R/2H",
+                    "time_taken": 78.24,
+                    "failed_robots": 0,
+                    "sub_score": 78.24,
+                    "accumulated_score": 356.288
+                },
+                {
+                    "step": 7,
+                    "scenario": "9R/3H",
+                    "time_taken": 38.912,
+                    "failed_robots": 0,
+                    "sub_score": 38.912,
+                    "accumulated_score": 395.2
+                },
+                {
+                    "step": 8,
+                    "scenario": "8R/3H",
+                    "time_taken": 37.248,
+                    "failed_robots": 0,
+                    "sub_score": 37.248,
+                    "accumulated_score": 432.448
+                },
+                {
+                    "step": 9,
+                    "scenario": "10R/4H",
+                    "time_taken": 41.568,
+                    "failed_robots": 0,
+                    "sub_score": 41.568,
+                    "accumulated_score": 474.01599999999996
+                },
+                {
+                    "step": 10,
+                    "scenario": "7R/3H",
+                    "time_taken": 50.88,
+                    "failed_robots": 0,
+                    "sub_score": 50.88,
+                    "accumulated_score": 524.896
+                },
+                {
+                    "step": 11,
+                    "scenario": "9R/4H",
+                    "time_taken": 38.208,
+                    "failed_robots": 0,
+                    "sub_score": 38.208,
+                    "accumulated_score": 563.1039999999999
+                },
+                {
+                    "step": 12,
+                    "scenario": "6R/3H",
+                    "time_taken": 42.912,
+                    "failed_robots": 0,
+                    "sub_score": 42.912,
+                    "accumulated_score": 606.016
+                },
+                {
+                    "step": 13,
+                    "scenario": "8R/4H",
+                    "time_taken": 42.144,
+                    "failed_robots": 0,
+                    "sub_score": 42.144,
+                    "accumulated_score": 648.16
+                },
+                {
+                    "step": 14,
+                    "scenario": "7R/4H",
+                    "time_taken": 36.416000000000004,
+                    "failed_robots": 0,
+                    "sub_score": 36.416000000000004,
+                    "accumulated_score": 684.576
+                },
+                {
+                    "step": 15,
+                    "scenario": "6R/4H",
+                    "time_taken": 41.28,
+                    "failed_robots": 0,
+                    "sub_score": 41.28,
+                    "accumulated_score": 725.856
+                }
+            ]
+        },
+        {
+            "trial_number": 32,
+            "state": "TrialState.PRUNED",
+            "final_score": 56.96,
+            "params": {
+                "w_light": 0.00019417016059635443,
+                "w_prox": 1.9388109029985173e-05,
+                "w_slide": 0.0010438425583752262,
+                "w_noise": 2.3514844468509897
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 56.96,
+                    "failed_robots": 0,
+                    "sub_score": 56.96,
+                    "accumulated_score": 56.96
+                },
+                {
+                    "step": 2,
+                    "scenario": "9R/2H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 2,
+                    "sub_score": 189.984,
+                    "accumulated_score": 246.94400000000002
+                }
+            ]
+        },
+        {
+            "trial_number": 33,
+            "state": "TrialState.PRUNED",
+            "final_score": 243.29600000000002,
+            "params": {
+                "w_light": 0.0002962444401037249,
+                "w_prox": 2.1074565254785838e-05,
+                "w_slide": 0.002528775959907877,
+                "w_noise": 2.0462059016359513
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 46.08,
+                    "failed_robots": 0,
+                    "sub_score": 46.08,
+                    "accumulated_score": 46.08
+                },
+                {
+                    "step": 2,
+                    "scenario": "9R/2H",
+                    "time_taken": 41.248,
+                    "failed_robots": 0,
+                    "sub_score": 41.248,
+                    "accumulated_score": 87.328
+                },
+                {
+                    "step": 3,
+                    "scenario": "8R/2H",
+                    "time_taken": 33.376,
+                    "failed_robots": 0,
+                    "sub_score": 33.376,
+                    "accumulated_score": 120.70400000000001
+                },
+                {
+                    "step": 4,
+                    "scenario": "7R/2H",
+                    "time_taken": 42.464,
+                    "failed_robots": 0,
+                    "sub_score": 42.464,
+                    "accumulated_score": 163.168
+                },
+                {
+                    "step": 5,
+                    "scenario": "10R/3H",
+                    "time_taken": 40.384,
+                    "failed_robots": 0,
+                    "sub_score": 40.384,
+                    "accumulated_score": 203.55200000000002
+                },
+                {
+                    "step": 6,
+                    "scenario": "6R/2H",
+                    "time_taken": 39.744,
+                    "failed_robots": 0,
+                    "sub_score": 39.744,
+                    "accumulated_score": 243.29600000000002
+                },
+                {
+                    "step": 7,
+                    "scenario": "9R/3H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 2,
+                    "sub_score": 189.984,
+                    "accumulated_score": 433.28000000000003
+                }
+            ]
+        },
+        {
+            "trial_number": 34,
+            "state": "TrialState.PRUNED",
+            "final_score": 213.18400000000003,
+            "params": {
+                "w_light": 0.00011250189890096114,
+                "w_prox": 3.242873611028118e-05,
+                "w_slide": 0.0015366544916632099,
+                "w_noise": 1.629797409392957
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 72.096,
+                    "failed_robots": 0,
+                    "sub_score": 72.096,
+                    "accumulated_score": 72.096
+                },
+                {
+                    "step": 2,
+                    "scenario": "9R/2H",
+                    "time_taken": 72.44800000000001,
+                    "failed_robots": 0,
+                    "sub_score": 72.44800000000001,
+                    "accumulated_score": 144.544
+                },
+                {
+                    "step": 3,
+                    "scenario": "8R/2H",
+                    "time_taken": 68.64,
+                    "failed_robots": 0,
+                    "sub_score": 68.64,
+                    "accumulated_score": 213.18400000000003
+                },
+                {
+                    "step": 4,
+                    "scenario": "7R/2H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 1,
+                    "sub_score": 139.984,
+                    "accumulated_score": 353.168
+                }
+            ]
+        },
+        {
+            "trial_number": 35,
+            "state": "TrialState.PRUNED",
+            "final_score": -1,
+            "params": {
+                "w_light": 3.6753705731528764e-05,
+                "w_prox": 6.559230081915277e-05,
+                "w_slide": 0.0019490463940472949,
+                "w_noise": 1.4253861972689479
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 3,
+                    "sub_score": 239.984,
+                    "accumulated_score": 239.984
+                }
+            ]
+        },
+        {
+            "trial_number": 36,
+            "state": "TrialState.PRUNED",
+            "final_score": -1,
+            "params": {
+                "w_light": 0.00023238236465318772,
+                "w_prox": 1.1295869253039475e-05,
+                "w_slide": 0.009214921248686739,
+                "w_noise": 2.6552688009817222
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 3,
+                    "sub_score": 239.984,
+                    "accumulated_score": 239.984
+                }
+            ]
+        },
+        {
+            "trial_number": 37,
+            "state": "TrialState.PRUNED",
+            "final_score": 109.952,
+            "params": {
+                "w_light": 0.0004353494367694628,
+                "w_prox": 5.025312345643715e-05,
+                "w_slide": 0.002590173448198775,
+                "w_noise": 2.2471444272424272
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 54.24,
+                    "failed_robots": 0,
+                    "sub_score": 54.24,
+                    "accumulated_score": 54.24
+                },
+                {
+                    "step": 2,
+                    "scenario": "9R/2H",
+                    "time_taken": 55.712,
+                    "failed_robots": 0,
+                    "sub_score": 55.712,
+                    "accumulated_score": 109.952
+                },
+                {
+                    "step": 3,
+                    "scenario": "8R/2H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 4,
+                    "sub_score": 289.98400000000004,
+                    "accumulated_score": 399.93600000000004
+                }
+            ]
+        },
+        {
+            "trial_number": 38,
+            "state": "TrialState.PRUNED",
+            "final_score": -1,
+            "params": {
+                "w_light": 0.00017339713823761465,
+                "w_prox": 4.006867130875399e-05,
+                "w_slide": 0.0057807505881779945,
+                "w_noise": 2.7437268186434967
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 1,
+                    "sub_score": 139.984,
+                    "accumulated_score": 139.984
+                }
+            ]
+        },
+        {
+            "trial_number": 39,
+            "state": "TrialState.PRUNED",
+            "final_score": 36.672000000000004,
+            "params": {
+                "w_light": 0.0002696310342115044,
+                "w_prox": 6.284533581622499e-06,
+                "w_slide": 0.0013078883714320619,
+                "w_noise": 2.0342280693659918
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 36.672000000000004,
+                    "failed_robots": 0,
+                    "sub_score": 36.672000000000004,
+                    "accumulated_score": 36.672000000000004
+                },
+                {
+                    "step": 2,
+                    "scenario": "9R/2H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 2,
+                    "sub_score": 189.984,
+                    "accumulated_score": 226.656
+                }
+            ]
+        },
+        {
+            "trial_number": 40,
+            "state": "TrialState.PRUNED",
+            "final_score": -1,
+            "params": {
+                "w_light": 1.621799149197102e-05,
+                "w_prox": 7.598693877443815e-05,
+                "w_slide": 0.015007371594594353,
+                "w_noise": 1.442959666273049
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 8,
+                    "sub_score": 489.98400000000004,
+                    "accumulated_score": 489.98400000000004
+                }
+            ]
+        },
+        {
+            "trial_number": 41,
+            "state": "TrialState.PRUNED",
+            "final_score": -1,
+            "params": {
+                "w_light": 0.0006673372525998078,
+                "w_prox": 2.0236531494253604e-05,
+                "w_slide": 0.0029058011875160317,
+                "w_noise": 1.9896666282235786
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 2,
+                    "sub_score": 189.984,
+                    "accumulated_score": 189.984
+                }
+            ]
+        },
+        {
+            "trial_number": 42,
+            "state": "TrialState.PRUNED",
+            "final_score": -1,
+            "params": {
+                "w_light": 0.0002652626026813325,
+                "w_prox": 2.4173206212676157e-05,
+                "w_slide": 0.003753828019908363,
+                "w_noise": 2.1770853627659528
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 2,
+                    "sub_score": 189.984,
+                    "accumulated_score": 189.984
+                }
+            ]
+        },
+        {
+            "trial_number": 43,
+            "state": "TrialState.PRUNED",
+            "final_score": -1,
+            "params": {
+                "w_light": 0.00041217095089945906,
+                "w_prox": 1.6950030921301217e-05,
+                "w_slide": 0.00192089660882804,
+                "w_noise": 1.6958955059385326
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 2,
+                    "sub_score": 189.984,
+                    "accumulated_score": 189.984
+                }
+            ]
+        },
+        {
+            "trial_number": 44,
+            "state": "TrialState.COMPLETE",
+            "final_score": 656.9279999999999,
+            "params": {
+                "w_light": 0.0003185255423880358,
+                "w_prox": 2.7551635662332265e-05,
+                "w_slide": 0.0026026236793930723,
+                "w_noise": 2.3652341577396374
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 43.808,
+                    "failed_robots": 0,
+                    "sub_score": 43.808,
+                    "accumulated_score": 43.808
+                },
+                {
+                    "step": 2,
+                    "scenario": "9R/2H",
+                    "time_taken": 59.68,
+                    "failed_robots": 0,
+                    "sub_score": 59.68,
+                    "accumulated_score": 103.488
+                },
+                {
+                    "step": 3,
+                    "scenario": "8R/2H",
+                    "time_taken": 42.912,
+                    "failed_robots": 0,
+                    "sub_score": 42.912,
+                    "accumulated_score": 146.4
+                },
+                {
+                    "step": 4,
+                    "scenario": "7R/2H",
+                    "time_taken": 40.416000000000004,
+                    "failed_robots": 0,
+                    "sub_score": 40.416000000000004,
+                    "accumulated_score": 186.816
+                },
+                {
+                    "step": 5,
+                    "scenario": "10R/3H",
+                    "time_taken": 38.24,
+                    "failed_robots": 0,
+                    "sub_score": 38.24,
+                    "accumulated_score": 225.056
+                },
+                {
+                    "step": 6,
+                    "scenario": "6R/2H",
+                    "time_taken": 40.800000000000004,
+                    "failed_robots": 0,
+                    "sub_score": 40.800000000000004,
+                    "accumulated_score": 265.856
+                },
+                {
+                    "step": 7,
+                    "scenario": "9R/3H",
+                    "time_taken": 44.288000000000004,
+                    "failed_robots": 0,
+                    "sub_score": 44.288000000000004,
+                    "accumulated_score": 310.144
+                },
+                {
+                    "step": 8,
+                    "scenario": "8R/3H",
+                    "time_taken": 44.224000000000004,
+                    "failed_robots": 0,
+                    "sub_score": 44.224000000000004,
+                    "accumulated_score": 354.368
+                },
+                {
+                    "step": 9,
+                    "scenario": "10R/4H",
+                    "time_taken": 32.096000000000004,
+                    "failed_robots": 0,
+                    "sub_score": 32.096000000000004,
+                    "accumulated_score": 386.464
+                },
+                {
+                    "step": 10,
+                    "scenario": "7R/3H",
+                    "time_taken": 54.912,
+                    "failed_robots": 0,
+                    "sub_score": 54.912,
+                    "accumulated_score": 441.376
+                },
+                {
+                    "step": 11,
+                    "scenario": "9R/4H",
+                    "time_taken": 33.632,
+                    "failed_robots": 0,
+                    "sub_score": 33.632,
+                    "accumulated_score": 475.008
+                },
+                {
+                    "step": 12,
+                    "scenario": "6R/3H",
+                    "time_taken": 32.608000000000004,
+                    "failed_robots": 0,
+                    "sub_score": 32.608000000000004,
+                    "accumulated_score": 507.616
+                },
+                {
+                    "step": 13,
+                    "scenario": "8R/4H",
+                    "time_taken": 36.736000000000004,
+                    "failed_robots": 0,
+                    "sub_score": 36.736000000000004,
+                    "accumulated_score": 544.352
+                },
+                {
+                    "step": 14,
+                    "scenario": "7R/4H",
+                    "time_taken": 44.160000000000004,
+                    "failed_robots": 0,
+                    "sub_score": 44.160000000000004,
+                    "accumulated_score": 588.512
+                },
+                {
+                    "step": 15,
+                    "scenario": "6R/4H",
+                    "time_taken": 68.416,
+                    "failed_robots": 0,
+                    "sub_score": 68.416,
+                    "accumulated_score": 656.9279999999999
+                }
+            ]
+        },
+        {
+            "trial_number": 45,
+            "state": "TrialState.PRUNED",
+            "final_score": 71.744,
+            "params": {
+                "w_light": 0.00016546009992824708,
+                "w_prox": 2.90588301136853e-05,
+                "w_slide": 0.002140811300327125,
+                "w_noise": 2.3633979753177745
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 71.744,
+                    "failed_robots": 0,
+                    "sub_score": 71.744,
+                    "accumulated_score": 71.744
+                },
+                {
+                    "step": 2,
+                    "scenario": "9R/2H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 1,
+                    "sub_score": 139.984,
+                    "accumulated_score": 211.728
+                }
+            ]
+        },
+        {
+            "trial_number": 46,
+            "state": "TrialState.PRUNED",
+            "final_score": -1,
+            "params": {
+                "w_light": 7.831738667032204e-05,
+                "w_prox": 3.695608825441251e-05,
+                "w_slide": 0.001299320509531402,
+                "w_noise": 2.905822777757419
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 5,
+                    "sub_score": 339.98400000000004,
+                    "accumulated_score": 339.98400000000004
+                }
+            ]
+        },
+        {
+            "trial_number": 47,
+            "state": "TrialState.PRUNED",
+            "final_score": -1,
+            "params": {
+                "w_light": 5.082195166801075e-06,
+                "w_prox": 8.981547130320381e-05,
+                "w_slide": 0.005213445746821894,
+                "w_noise": 2.3632418263226
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 10,
+                    "sub_score": 589.984,
+                    "accumulated_score": 589.984
+                }
+            ]
+        },
+        {
+            "trial_number": 48,
+            "state": "TrialState.PRUNED",
+            "final_score": -1,
+            "params": {
+                "w_light": 1.2984428247245476e-06,
+                "w_prox": 4.8182484441876764e-05,
+                "w_slide": 0.008038815163752279,
+                "w_noise": 1.7412728602315801
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 9,
+                    "sub_score": 539.984,
+                    "accumulated_score": 539.984
+                }
+            ]
+        },
+        {
+            "trial_number": 49,
+            "state": "TrialState.PRUNED",
+            "final_score": 78.464,
+            "params": {
+                "w_light": 0.0007468470544506694,
+                "w_prox": 2.597140598843662e-05,
+                "w_slide": 0.003031218481678548,
+                "w_noise": 2.497301001518013
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 78.464,
+                    "failed_robots": 0,
+                    "sub_score": 78.464,
+                    "accumulated_score": 78.464
+                },
+                {
+                    "step": 2,
+                    "scenario": "9R/2H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 6,
+                    "sub_score": 389.98400000000004,
+                    "accumulated_score": 468.44800000000004
+                }
+            ]
+        },
+        {
+            "trial_number": 50,
+            "state": "TrialState.PRUNED",
+            "final_score": 45.856,
+            "params": {
+                "w_light": 0.00010811207477753946,
+                "w_prox": 4.336454317642061e-06,
+                "w_slide": 0.0017316322114770907,
+                "w_noise": 2.1095262504423773
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 45.856,
+                    "failed_robots": 0,
+                    "sub_score": 45.856,
+                    "accumulated_score": 45.856
+                },
+                {
+                    "step": 2,
+                    "scenario": "9R/2H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 2,
+                    "sub_score": 189.984,
+                    "accumulated_score": 235.84
+                }
+            ]
+        },
+        {
+            "trial_number": 51,
+            "state": "TrialState.PRUNED",
+            "final_score": -1,
+            "params": {
+                "w_light": 0.0003105753415765359,
+                "w_prox": 1.7898304126051972e-05,
+                "w_slide": 0.002596607012285929,
+                "w_noise": 1.9633043586386787
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 2,
+                    "sub_score": 189.984,
+                    "accumulated_score": 189.984
+                }
+            ]
+        },
+        {
+            "trial_number": 52,
+            "state": "TrialState.PRUNED",
+            "final_score": -1,
+            "params": {
+                "w_light": 0.00032788393657490336,
+                "w_prox": 2.075162847121582e-05,
+                "w_slide": 0.003940772780878393,
+                "w_noise": 2.166105676602828
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 2,
+                    "sub_score": 189.984,
+                    "accumulated_score": 189.984
+                }
+            ]
+        },
+        {
+            "trial_number": 53,
+            "state": "TrialState.PRUNED",
+            "final_score": 38.72,
+            "params": {
+                "w_light": 0.0004410690161620106,
+                "w_prox": 1.242914338790093e-05,
+                "w_slide": 0.0023331089641283635,
+                "w_noise": 2.0538970467673705
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 38.72,
+                    "failed_robots": 0,
+                    "sub_score": 38.72,
+                    "accumulated_score": 38.72
+                },
+                {
+                    "step": 2,
+                    "scenario": "9R/2H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 1,
+                    "sub_score": 139.984,
+                    "accumulated_score": 178.704
+                }
+            ]
+        },
+        {
+            "trial_number": 54,
+            "state": "TrialState.PRUNED",
+            "final_score": -1,
+            "params": {
+                "w_light": 0.0007630475212754064,
+                "w_prox": 3.44806555117661e-05,
+                "w_slide": 0.0027800327748460003,
+                "w_noise": 2.3218540096214166
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 5,
+                    "sub_score": 339.98400000000004,
+                    "accumulated_score": 339.98400000000004
+                }
+            ]
+        },
+        {
+            "trial_number": 55,
+            "state": "TrialState.PRUNED",
+            "final_score": 602.752,
+            "params": {
+                "w_light": 0.0001386683947270546,
+                "w_prox": 4.4250429031447066e-05,
+                "w_slide": 0.0062264068107201545,
+                "w_noise": 1.147443946424847
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 52.576,
+                    "failed_robots": 0,
+                    "sub_score": 52.576,
+                    "accumulated_score": 52.576
+                },
+                {
+                    "step": 2,
+                    "scenario": "9R/2H",
+                    "time_taken": 83.328,
+                    "failed_robots": 0,
+                    "sub_score": 83.328,
+                    "accumulated_score": 135.904
+                },
+                {
+                    "step": 3,
+                    "scenario": "8R/2H",
+                    "time_taken": 60.256,
+                    "failed_robots": 0,
+                    "sub_score": 60.256,
+                    "accumulated_score": 196.16
+                },
+                {
+                    "step": 4,
+                    "scenario": "7R/2H",
+                    "time_taken": 38.624,
+                    "failed_robots": 0,
+                    "sub_score": 38.624,
+                    "accumulated_score": 234.784
+                },
+                {
+                    "step": 5,
+                    "scenario": "10R/3H",
+                    "time_taken": 37.056,
+                    "failed_robots": 0,
+                    "sub_score": 37.056,
+                    "accumulated_score": 271.84
+                },
+                {
+                    "step": 6,
+                    "scenario": "6R/2H",
+                    "time_taken": 53.6,
+                    "failed_robots": 0,
+                    "sub_score": 53.6,
+                    "accumulated_score": 325.44
+                },
+                {
+                    "step": 7,
+                    "scenario": "9R/3H",
+                    "time_taken": 38.912,
+                    "failed_robots": 0,
+                    "sub_score": 38.912,
+                    "accumulated_score": 364.352
+                },
+                {
+                    "step": 8,
+                    "scenario": "8R/3H",
+                    "time_taken": 42.208,
+                    "failed_robots": 0,
+                    "sub_score": 42.208,
+                    "accumulated_score": 406.55999999999995
+                },
+                {
+                    "step": 9,
+                    "scenario": "10R/4H",
+                    "time_taken": 43.264,
+                    "failed_robots": 0,
+                    "sub_score": 43.264,
+                    "accumulated_score": 449.82399999999996
+                },
+                {
+                    "step": 10,
+                    "scenario": "7R/3H",
+                    "time_taken": 46.56,
+                    "failed_robots": 0,
+                    "sub_score": 46.56,
+                    "accumulated_score": 496.38399999999996
+                },
+                {
+                    "step": 11,
+                    "scenario": "9R/4H",
+                    "time_taken": 35.552,
+                    "failed_robots": 0,
+                    "sub_score": 35.552,
+                    "accumulated_score": 531.9359999999999
+                },
+                {
+                    "step": 12,
+                    "scenario": "6R/3H",
+                    "time_taken": 32.256,
+                    "failed_robots": 0,
+                    "sub_score": 32.256,
+                    "accumulated_score": 564.1919999999999
+                },
+                {
+                    "step": 13,
+                    "scenario": "8R/4H",
+                    "time_taken": 38.56,
+                    "failed_robots": 0,
+                    "sub_score": 38.56,
+                    "accumulated_score": 602.752
+                },
+                {
+                    "step": 14,
+                    "scenario": "7R/4H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 1,
+                    "sub_score": 139.984,
+                    "accumulated_score": 742.736
+                }
+            ]
+        },
+        {
+            "trial_number": 56,
+            "state": "TrialState.PRUNED",
+            "final_score": 455.872,
+            "params": {
+                "w_light": 0.00014531447103483542,
+                "w_prox": 4.340777479096037e-05,
+                "w_slide": 0.0071920129362392175,
+                "w_noise": 0.9933998970006623
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 50.208,
+                    "failed_robots": 0,
+                    "sub_score": 50.208,
+                    "accumulated_score": 50.208
+                },
+                {
+                    "step": 2,
+                    "scenario": "9R/2H",
+                    "time_taken": 59.328,
+                    "failed_robots": 0,
+                    "sub_score": 59.328,
+                    "accumulated_score": 109.536
+                },
+                {
+                    "step": 3,
+                    "scenario": "8R/2H",
+                    "time_taken": 36.576,
+                    "failed_robots": 0,
+                    "sub_score": 36.576,
+                    "accumulated_score": 146.112
+                },
+                {
+                    "step": 4,
+                    "scenario": "7R/2H",
+                    "time_taken": 47.648,
+                    "failed_robots": 0,
+                    "sub_score": 47.648,
+                    "accumulated_score": 193.76
+                },
+                {
+                    "step": 5,
+                    "scenario": "10R/3H",
+                    "time_taken": 46.304,
+                    "failed_robots": 0,
+                    "sub_score": 46.304,
+                    "accumulated_score": 240.064
+                },
+                {
+                    "step": 6,
+                    "scenario": "6R/2H",
+                    "time_taken": 37.28,
+                    "failed_robots": 0,
+                    "sub_score": 37.28,
+                    "accumulated_score": 277.344
+                },
+                {
+                    "step": 7,
+                    "scenario": "9R/3H",
+                    "time_taken": 44.0,
+                    "failed_robots": 0,
+                    "sub_score": 44.0,
+                    "accumulated_score": 321.344
+                },
+                {
+                    "step": 8,
+                    "scenario": "8R/3H",
+                    "time_taken": 47.136,
+                    "failed_robots": 0,
+                    "sub_score": 47.136,
+                    "accumulated_score": 368.48
+                },
+                {
+                    "step": 9,
+                    "scenario": "10R/4H",
+                    "time_taken": 36.192,
+                    "failed_robots": 0,
+                    "sub_score": 36.192,
+                    "accumulated_score": 404.672
+                },
+                {
+                    "step": 10,
+                    "scenario": "7R/3H",
+                    "time_taken": 51.2,
+                    "failed_robots": 0,
+                    "sub_score": 51.2,
+                    "accumulated_score": 455.872
+                },
+                {
+                    "step": 11,
+                    "scenario": "9R/4H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 1,
+                    "sub_score": 139.984,
+                    "accumulated_score": 595.856
+                }
+            ]
+        },
+        {
+            "trial_number": 57,
+            "state": "TrialState.PRUNED",
+            "final_score": 389.4720000000001,
+            "params": {
+                "w_light": 0.0002297798882351488,
+                "w_prox": 5.883705888390957e-05,
+                "w_slide": 0.004329978588138539,
+                "w_noise": 1.2623380072515722
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 40.736000000000004,
+                    "failed_robots": 0,
+                    "sub_score": 40.736000000000004,
+                    "accumulated_score": 40.736000000000004
+                },
+                {
+                    "step": 2,
+                    "scenario": "9R/2H",
+                    "time_taken": 53.504,
+                    "failed_robots": 0,
+                    "sub_score": 53.504,
+                    "accumulated_score": 94.24000000000001
+                },
+                {
+                    "step": 3,
+                    "scenario": "8R/2H",
+                    "time_taken": 37.024,
+                    "failed_robots": 0,
+                    "sub_score": 37.024,
+                    "accumulated_score": 131.264
+                },
+                {
+                    "step": 4,
+                    "scenario": "7R/2H",
+                    "time_taken": 51.712,
+                    "failed_robots": 0,
+                    "sub_score": 51.712,
+                    "accumulated_score": 182.976
+                },
+                {
+                    "step": 5,
+                    "scenario": "10R/3H",
+                    "time_taken": 28.384,
+                    "failed_robots": 0,
+                    "sub_score": 28.384,
+                    "accumulated_score": 211.36
+                },
+                {
+                    "step": 6,
+                    "scenario": "6R/2H",
+                    "time_taken": 76.992,
+                    "failed_robots": 0,
+                    "sub_score": 76.992,
+                    "accumulated_score": 288.35200000000003
+                },
+                {
+                    "step": 7,
+                    "scenario": "9R/3H",
+                    "time_taken": 31.872,
+                    "failed_robots": 0,
+                    "sub_score": 31.872,
+                    "accumulated_score": 320.22400000000005
+                },
+                {
+                    "step": 8,
+                    "scenario": "8R/3H",
+                    "time_taken": 35.648,
+                    "failed_robots": 0,
+                    "sub_score": 35.648,
+                    "accumulated_score": 355.87200000000007
+                },
+                {
+                    "step": 9,
+                    "scenario": "10R/4H",
+                    "time_taken": 33.6,
+                    "failed_robots": 0,
+                    "sub_score": 33.6,
+                    "accumulated_score": 389.4720000000001
+                },
+                {
+                    "step": 10,
+                    "scenario": "7R/3H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 1,
+                    "sub_score": 139.984,
+                    "accumulated_score": 529.4560000000001
+                }
+            ]
+        },
+        {
+            "trial_number": 58,
+            "state": "TrialState.PRUNED",
+            "final_score": 170.304,
+            "params": {
+                "w_light": 0.000529696543570944,
+                "w_prox": 7.58146885417965e-05,
+                "w_slide": 0.0034407688620505346,
+                "w_noise": 0.8750820695398934
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 58.976,
+                    "failed_robots": 0,
+                    "sub_score": 58.976,
+                    "accumulated_score": 58.976
+                },
+                {
+                    "step": 2,
+                    "scenario": "9R/2H",
+                    "time_taken": 72.19200000000001,
+                    "failed_robots": 0,
+                    "sub_score": 72.19200000000001,
+                    "accumulated_score": 131.168
+                },
+                {
+                    "step": 3,
+                    "scenario": "8R/2H",
+                    "time_taken": 39.136,
+                    "failed_robots": 0,
+                    "sub_score": 39.136,
+                    "accumulated_score": 170.304
+                },
+                {
+                    "step": 4,
+                    "scenario": "7R/2H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 1,
+                    "sub_score": 139.984,
+                    "accumulated_score": 310.288
+                }
+            ]
+        },
+        {
+            "trial_number": 59,
+            "state": "TrialState.PRUNED",
+            "final_score": -1,
+            "params": {
+                "w_light": 5.7104626020243505e-05,
+                "w_prox": 2.940344726506097e-05,
+                "w_slide": 0.012879056182873909,
+                "w_noise": 0.4579998155776006
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 3,
+                    "sub_score": 239.984,
+                    "accumulated_score": 239.984
+                }
+            ]
+        },
+        {
+            "trial_number": 60,
+            "state": "TrialState.PRUNED",
+            "final_score": 250.36800000000002,
+            "params": {
+                "w_light": 0.00019215820603463832,
+                "w_prox": 1.519902560280057e-05,
+                "w_slide": 0.00488873626902115,
+                "w_noise": 1.1866035582843737
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 53.856,
+                    "failed_robots": 0,
+                    "sub_score": 53.856,
+                    "accumulated_score": 53.856
+                },
+                {
+                    "step": 2,
+                    "scenario": "9R/2H",
+                    "time_taken": 37.056,
+                    "failed_robots": 0,
+                    "sub_score": 37.056,
+                    "accumulated_score": 90.912
+                },
+                {
+                    "step": 3,
+                    "scenario": "8R/2H",
+                    "time_taken": 36.512,
+                    "failed_robots": 0,
+                    "sub_score": 36.512,
+                    "accumulated_score": 127.424
+                },
+                {
+                    "step": 4,
+                    "scenario": "7R/2H",
+                    "time_taken": 43.936,
+                    "failed_robots": 0,
+                    "sub_score": 43.936,
+                    "accumulated_score": 171.36
+                },
+                {
+                    "step": 5,
+                    "scenario": "10R/3H",
+                    "time_taken": 34.144,
+                    "failed_robots": 0,
+                    "sub_score": 34.144,
+                    "accumulated_score": 205.50400000000002
+                },
+                {
+                    "step": 6,
+                    "scenario": "6R/2H",
+                    "time_taken": 44.864000000000004,
+                    "failed_robots": 0,
+                    "sub_score": 44.864000000000004,
+                    "accumulated_score": 250.36800000000002
+                },
+                {
+                    "step": 7,
+                    "scenario": "9R/3H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 1,
+                    "sub_score": 139.984,
+                    "accumulated_score": 390.35200000000003
+                }
+            ]
+        },
+        {
+            "trial_number": 61,
+            "state": "TrialState.PRUNED",
+            "final_score": 340.608,
+            "params": {
+                "w_light": 0.00014100917897325168,
+                "w_prox": 4.439431633294901e-05,
+                "w_slide": 0.007604827170618124,
+                "w_noise": 0.6170108184896217
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 63.424,
+                    "failed_robots": 0,
+                    "sub_score": 63.424,
+                    "accumulated_score": 63.424
+                },
+                {
+                    "step": 2,
+                    "scenario": "9R/2H",
+                    "time_taken": 36.160000000000004,
+                    "failed_robots": 0,
+                    "sub_score": 36.160000000000004,
+                    "accumulated_score": 99.584
+                },
+                {
+                    "step": 3,
+                    "scenario": "8R/2H",
+                    "time_taken": 41.92,
+                    "failed_robots": 0,
+                    "sub_score": 41.92,
+                    "accumulated_score": 141.50400000000002
+                },
+                {
+                    "step": 4,
+                    "scenario": "7R/2H",
+                    "time_taken": 47.648,
+                    "failed_robots": 0,
+                    "sub_score": 47.648,
+                    "accumulated_score": 189.15200000000002
+                },
+                {
+                    "step": 5,
+                    "scenario": "10R/3H",
+                    "time_taken": 30.944,
+                    "failed_robots": 0,
+                    "sub_score": 30.944,
+                    "accumulated_score": 220.096
+                },
+                {
+                    "step": 6,
+                    "scenario": "6R/2H",
+                    "time_taken": 34.24,
+                    "failed_robots": 0,
+                    "sub_score": 34.24,
+                    "accumulated_score": 254.336
+                },
+                {
+                    "step": 7,
+                    "scenario": "9R/3H",
+                    "time_taken": 44.544000000000004,
+                    "failed_robots": 0,
+                    "sub_score": 44.544000000000004,
+                    "accumulated_score": 298.88
+                },
+                {
+                    "step": 8,
+                    "scenario": "8R/3H",
+                    "time_taken": 41.728,
+                    "failed_robots": 0,
+                    "sub_score": 41.728,
+                    "accumulated_score": 340.608
+                },
+                {
+                    "step": 9,
+                    "scenario": "10R/4H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 2,
+                    "sub_score": 189.984,
+                    "accumulated_score": 530.592
+                }
+            ]
+        },
+        {
+            "trial_number": 62,
+            "state": "TrialState.PRUNED",
+            "final_score": -1,
+            "params": {
+                "w_light": 8.010896827934216e-05,
+                "w_prox": 3.9268283336438564e-05,
+                "w_slide": 0.00625290268042537,
+                "w_noise": 1.5165929759862045
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 1,
+                    "sub_score": 139.984,
+                    "accumulated_score": 139.984
+                }
+            ]
+        },
+        {
+            "trial_number": 63,
+            "state": "TrialState.COMPLETE",
+            "final_score": 581.6320000000003,
+            "params": {
+                "w_light": 0.00014183275338424154,
+                "w_prox": 5.2429194602908057e-05,
+                "w_slide": 0.009269706557865473,
+                "w_noise": 0.9707072945431112
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 44.992000000000004,
+                    "failed_robots": 0,
+                    "sub_score": 44.992000000000004,
+                    "accumulated_score": 44.992000000000004
+                },
+                {
+                    "step": 2,
+                    "scenario": "9R/2H",
+                    "time_taken": 46.848,
+                    "failed_robots": 0,
+                    "sub_score": 46.848,
+                    "accumulated_score": 91.84
+                },
+                {
+                    "step": 3,
+                    "scenario": "8R/2H",
+                    "time_taken": 55.68,
+                    "failed_robots": 0,
+                    "sub_score": 55.68,
+                    "accumulated_score": 147.52
+                },
+                {
+                    "step": 4,
+                    "scenario": "7R/2H",
+                    "time_taken": 36.224000000000004,
+                    "failed_robots": 0,
+                    "sub_score": 36.224000000000004,
+                    "accumulated_score": 183.74400000000003
+                },
+                {
+                    "step": 5,
+                    "scenario": "10R/3H",
+                    "time_taken": 40.288000000000004,
+                    "failed_robots": 0,
+                    "sub_score": 40.288000000000004,
+                    "accumulated_score": 224.03200000000004
+                },
+                {
+                    "step": 6,
+                    "scenario": "6R/2H",
+                    "time_taken": 32.064,
+                    "failed_robots": 0,
+                    "sub_score": 32.064,
+                    "accumulated_score": 256.09600000000006
+                },
+                {
+                    "step": 7,
+                    "scenario": "9R/3H",
+                    "time_taken": 35.968,
+                    "failed_robots": 0,
+                    "sub_score": 35.968,
+                    "accumulated_score": 292.0640000000001
+                },
+                {
+                    "step": 8,
+                    "scenario": "8R/3H",
+                    "time_taken": 39.36,
+                    "failed_robots": 0,
+                    "sub_score": 39.36,
+                    "accumulated_score": 331.4240000000001
+                },
+                {
+                    "step": 9,
+                    "scenario": "10R/4H",
+                    "time_taken": 37.6,
+                    "failed_robots": 0,
+                    "sub_score": 37.6,
+                    "accumulated_score": 369.0240000000001
+                },
+                {
+                    "step": 10,
+                    "scenario": "7R/3H",
+                    "time_taken": 34.528,
+                    "failed_robots": 0,
+                    "sub_score": 34.528,
+                    "accumulated_score": 403.55200000000013
+                },
+                {
+                    "step": 11,
+                    "scenario": "9R/4H",
+                    "time_taken": 34.72,
+                    "failed_robots": 0,
+                    "sub_score": 34.72,
+                    "accumulated_score": 438.27200000000016
+                },
+                {
+                    "step": 12,
+                    "scenario": "6R/3H",
+                    "time_taken": 41.696,
+                    "failed_robots": 0,
+                    "sub_score": 41.696,
+                    "accumulated_score": 479.9680000000002
+                },
+                {
+                    "step": 13,
+                    "scenario": "8R/4H",
+                    "time_taken": 33.024,
+                    "failed_robots": 0,
+                    "sub_score": 33.024,
+                    "accumulated_score": 512.9920000000002
+                },
+                {
+                    "step": 14,
+                    "scenario": "7R/4H",
+                    "time_taken": 40.224000000000004,
+                    "failed_robots": 0,
+                    "sub_score": 40.224000000000004,
+                    "accumulated_score": 553.2160000000002
+                },
+                {
+                    "step": 15,
+                    "scenario": "6R/4H",
+                    "time_taken": 28.416,
+                    "failed_robots": 0,
+                    "sub_score": 28.416,
+                    "accumulated_score": 581.6320000000003
+                }
+            ]
+        },
+        {
+            "trial_number": 64,
+            "state": "TrialState.PRUNED",
+            "final_score": -1,
+            "params": {
+                "w_light": 0.00037138572040177405,
+                "w_prox": 5.08841227169978e-05,
+                "w_slide": 0.005989877961236961,
+                "w_noise": 0.9382741593333422
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 5,
+                    "sub_score": 339.98400000000004,
+                    "accumulated_score": 339.98400000000004
+                }
+            ]
+        },
+        {
+            "trial_number": 65,
+            "state": "TrialState.PRUNED",
+            "final_score": -1,
+            "params": {
+                "w_light": 0.00010389416752671084,
+                "w_prox": 2.6077761162477612e-05,
+                "w_slide": 0.01047002229582044,
+                "w_noise": 1.177009121427789
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 4,
+                    "sub_score": 289.98400000000004,
+                    "accumulated_score": 289.98400000000004
+                }
+            ]
+        },
+        {
+            "trial_number": 66,
+            "state": "TrialState.PRUNED",
+            "final_score": -1,
+            "params": {
+                "w_light": 2.7016492366061124e-05,
+                "w_prox": 5.8328148366690625e-05,
+                "w_slide": 0.009288634746064917,
+                "w_noise": 0.7213813508537752
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 4,
+                    "sub_score": 289.98400000000004,
+                    "accumulated_score": 289.98400000000004
+                }
+            ]
+        },
+        {
+            "trial_number": 67,
+            "state": "TrialState.PRUNED",
+            "final_score": -1,
+            "params": {
+                "w_light": 0.0002583671006254457,
+                "w_prox": 3.533617040694831e-05,
+                "w_slide": 0.03512744741532179,
+                "w_noise": 1.3249995750012358
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 1,
+                    "sub_score": 139.984,
+                    "accumulated_score": 139.984
+                }
+            ]
+        },
+        {
+            "trial_number": 68,
+            "state": "TrialState.PRUNED",
+            "final_score": -1,
+            "params": {
+                "w_light": 0.0001258021861725946,
+                "w_prox": 7.052826260513783e-05,
+                "w_slide": 0.008782671439742479,
+                "w_noise": 1.7705285846600358
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 1,
+                    "sub_score": 139.984,
+                    "accumulated_score": 139.984
+                }
+            ]
+        },
+        {
+            "trial_number": 69,
+            "state": "TrialState.PRUNED",
+            "final_score": -1,
+            "params": {
+                "w_light": 4.015905949257053e-05,
+                "w_prox": 3.125884103415591e-05,
+                "w_slide": 0.011934566849481923,
+                "w_noise": 2.5786086822383725
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 7,
+                    "sub_score": 439.98400000000004,
+                    "accumulated_score": 439.98400000000004
+                }
+            ]
+        },
+        {
+            "trial_number": 70,
+            "state": "TrialState.PRUNED",
+            "final_score": -1,
+            "params": {
+                "w_light": 0.00019855010968170933,
+                "w_prox": 2.256729056053392e-05,
+                "w_slide": 0.018274014313943023,
+                "w_noise": 1.0927373559319529
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 1,
+                    "sub_score": 139.984,
+                    "accumulated_score": 139.984
+                }
+            ]
+        },
+        {
+            "trial_number": 71,
+            "state": "TrialState.PRUNED",
+            "final_score": 336.60799999999995,
+            "params": {
+                "w_light": 0.0001445435290090307,
+                "w_prox": 4.5284343117532666e-05,
+                "w_slide": 0.007198959637387367,
+                "w_noise": 0.9474734339987999
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 53.504,
+                    "failed_robots": 0,
+                    "sub_score": 53.504,
+                    "accumulated_score": 53.504
+                },
+                {
+                    "step": 2,
+                    "scenario": "9R/2H",
+                    "time_taken": 53.504,
+                    "failed_robots": 0,
+                    "sub_score": 53.504,
+                    "accumulated_score": 107.008
+                },
+                {
+                    "step": 3,
+                    "scenario": "8R/2H",
+                    "time_taken": 34.272,
+                    "failed_robots": 0,
+                    "sub_score": 34.272,
+                    "accumulated_score": 141.28
+                },
+                {
+                    "step": 4,
+                    "scenario": "7R/2H",
+                    "time_taken": 46.944,
+                    "failed_robots": 0,
+                    "sub_score": 46.944,
+                    "accumulated_score": 188.224
+                },
+                {
+                    "step": 5,
+                    "scenario": "10R/3H",
+                    "time_taken": 32.256,
+                    "failed_robots": 0,
+                    "sub_score": 32.256,
+                    "accumulated_score": 220.48
+                },
+                {
+                    "step": 6,
+                    "scenario": "6R/2H",
+                    "time_taken": 34.272,
+                    "failed_robots": 0,
+                    "sub_score": 34.272,
+                    "accumulated_score": 254.75199999999998
+                },
+                {
+                    "step": 7,
+                    "scenario": "9R/3H",
+                    "time_taken": 45.504,
+                    "failed_robots": 0,
+                    "sub_score": 45.504,
+                    "accumulated_score": 300.256
+                },
+                {
+                    "step": 8,
+                    "scenario": "8R/3H",
+                    "time_taken": 36.352000000000004,
+                    "failed_robots": 0,
+                    "sub_score": 36.352000000000004,
+                    "accumulated_score": 336.60799999999995
+                },
+                {
+                    "step": 9,
+                    "scenario": "10R/4H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 1,
+                    "sub_score": 139.984,
+                    "accumulated_score": 476.592
+                }
+            ]
+        },
+        {
+            "trial_number": 72,
+            "state": "TrialState.PRUNED",
+            "final_score": -1,
+            "params": {
+                "w_light": 6.625480500487937e-05,
+                "w_prox": 4.012160421144309e-05,
+                "w_slide": 0.006624084999609957,
+                "w_noise": 0.8315958178886169
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 2,
+                    "sub_score": 189.984,
+                    "accumulated_score": 189.984
+                }
+            ]
+        },
+        {
+            "trial_number": 73,
+            "state": "TrialState.PRUNED",
+            "final_score": 278.336,
+            "params": {
+                "w_light": 0.00021148815989370864,
+                "w_prox": 5.2090609987940134e-05,
+                "w_slide": 0.004654272716661291,
+                "w_noise": 1.02945254828635
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 29.216,
+                    "failed_robots": 0,
+                    "sub_score": 29.216,
+                    "accumulated_score": 29.216
+                },
+                {
+                    "step": 2,
+                    "scenario": "9R/2H",
+                    "time_taken": 43.456,
+                    "failed_robots": 0,
+                    "sub_score": 43.456,
+                    "accumulated_score": 72.672
+                },
+                {
+                    "step": 3,
+                    "scenario": "8R/2H",
+                    "time_taken": 41.024,
+                    "failed_robots": 0,
+                    "sub_score": 41.024,
+                    "accumulated_score": 113.696
+                },
+                {
+                    "step": 4,
+                    "scenario": "7R/2H",
+                    "time_taken": 43.68,
+                    "failed_robots": 0,
+                    "sub_score": 43.68,
+                    "accumulated_score": 157.376
+                },
+                {
+                    "step": 5,
+                    "scenario": "10R/3H",
+                    "time_taken": 32.416000000000004,
+                    "failed_robots": 0,
+                    "sub_score": 32.416000000000004,
+                    "accumulated_score": 189.792
+                },
+                {
+                    "step": 6,
+                    "scenario": "6R/2H",
+                    "time_taken": 42.784,
+                    "failed_robots": 0,
+                    "sub_score": 42.784,
+                    "accumulated_score": 232.576
+                },
+                {
+                    "step": 7,
+                    "scenario": "9R/3H",
+                    "time_taken": 45.76,
+                    "failed_robots": 0,
+                    "sub_score": 45.76,
+                    "accumulated_score": 278.336
+                },
+                {
+                    "step": 8,
+                    "scenario": "8R/3H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 2,
+                    "sub_score": 189.984,
+                    "accumulated_score": 468.32000000000005
+                }
+            ]
+        },
+        {
+            "trial_number": 74,
+            "state": "TrialState.PRUNED",
+            "final_score": -1,
+            "params": {
+                "w_light": 0.0005013308669698601,
+                "w_prox": 1.318153224494815e-06,
+                "w_slide": 0.005157023073702766,
+                "w_noise": 1.531631525678449
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 1,
+                    "sub_score": 139.984,
+                    "accumulated_score": 139.984
+                }
+            ]
+        },
+        {
+            "trial_number": 75,
+            "state": "TrialState.PRUNED",
+            "final_score": -1,
+            "params": {
+                "w_light": 0.00033673540354997513,
+                "w_prox": 4.25763168887588e-05,
+                "w_slide": 0.001164119159231401,
+                "w_noise": 1.912962495730638
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 1,
+                    "sub_score": 139.984,
+                    "accumulated_score": 139.984
+                }
+            ]
+        },
+        {
+            "trial_number": 76,
+            "state": "TrialState.PRUNED",
+            "final_score": 37.76,
+            "params": {
+                "w_light": 0.00016380732736191836,
+                "w_prox": 2.7068870135789152e-05,
+                "w_slide": 0.00156687972654857,
+                "w_noise": 0.6048022199022466
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 37.76,
+                    "failed_robots": 0,
+                    "sub_score": 37.76,
+                    "accumulated_score": 37.76
+                },
+                {
+                    "step": 2,
+                    "scenario": "9R/2H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 2,
+                    "sub_score": 189.984,
+                    "accumulated_score": 227.744
+                }
+            ]
+        },
+        {
+            "trial_number": 77,
+            "state": "TrialState.PRUNED",
+            "final_score": -1,
+            "params": {
+                "w_light": 0.0002599133082522857,
+                "w_prox": 3.38979989264857e-05,
+                "w_slide": 0.0037646871313763977,
+                "w_noise": 2.413423729715345
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 2,
+                    "sub_score": 189.984,
+                    "accumulated_score": 189.984
+                }
+            ]
+        },
+        {
+            "trial_number": 78,
+            "state": "TrialState.COMPLETE",
+            "final_score": 669.664,
+            "params": {
+                "w_light": 0.00038906290460370707,
+                "w_prox": 9.143446464109644e-05,
+                "w_slide": 0.0032731385904595078,
+                "w_noise": 2.2472897882024907
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 53.664,
+                    "failed_robots": 0,
+                    "sub_score": 53.664,
+                    "accumulated_score": 53.664
+                },
+                {
+                    "step": 2,
+                    "scenario": "9R/2H",
+                    "time_taken": 51.296,
+                    "failed_robots": 0,
+                    "sub_score": 51.296,
+                    "accumulated_score": 104.96000000000001
+                },
+                {
+                    "step": 3,
+                    "scenario": "8R/2H",
+                    "time_taken": 56.0,
+                    "failed_robots": 0,
+                    "sub_score": 56.0,
+                    "accumulated_score": 160.96
+                },
+                {
+                    "step": 4,
+                    "scenario": "7R/2H",
+                    "time_taken": 88.0,
+                    "failed_robots": 0,
+                    "sub_score": 88.0,
+                    "accumulated_score": 248.96
+                },
+                {
+                    "step": 5,
+                    "scenario": "10R/3H",
+                    "time_taken": 40.160000000000004,
+                    "failed_robots": 0,
+                    "sub_score": 40.160000000000004,
+                    "accumulated_score": 289.12
+                },
+                {
+                    "step": 6,
+                    "scenario": "6R/2H",
+                    "time_taken": 40.992,
+                    "failed_robots": 0,
+                    "sub_score": 40.992,
+                    "accumulated_score": 330.112
+                },
+                {
+                    "step": 7,
+                    "scenario": "9R/3H",
+                    "time_taken": 43.392,
+                    "failed_robots": 0,
+                    "sub_score": 43.392,
+                    "accumulated_score": 373.504
+                },
+                {
+                    "step": 8,
+                    "scenario": "8R/3H",
+                    "time_taken": 36.224000000000004,
+                    "failed_robots": 0,
+                    "sub_score": 36.224000000000004,
+                    "accumulated_score": 409.728
+                },
+                {
+                    "step": 9,
+                    "scenario": "10R/4H",
+                    "time_taken": 41.152,
+                    "failed_robots": 0,
+                    "sub_score": 41.152,
+                    "accumulated_score": 450.88
+                },
+                {
+                    "step": 10,
+                    "scenario": "7R/3H",
+                    "time_taken": 36.448,
+                    "failed_robots": 0,
+                    "sub_score": 36.448,
+                    "accumulated_score": 487.328
+                },
+                {
+                    "step": 11,
+                    "scenario": "9R/4H",
+                    "time_taken": 46.272,
+                    "failed_robots": 0,
+                    "sub_score": 46.272,
+                    "accumulated_score": 533.6
+                },
+                {
+                    "step": 12,
+                    "scenario": "6R/3H",
+                    "time_taken": 30.816,
+                    "failed_robots": 0,
+                    "sub_score": 30.816,
+                    "accumulated_score": 564.416
+                },
+                {
+                    "step": 13,
+                    "scenario": "8R/4H",
+                    "time_taken": 34.144,
+                    "failed_robots": 0,
+                    "sub_score": 34.144,
+                    "accumulated_score": 598.5600000000001
+                },
+                {
+                    "step": 14,
+                    "scenario": "7R/4H",
+                    "time_taken": 33.632,
+                    "failed_robots": 0,
+                    "sub_score": 33.632,
+                    "accumulated_score": 632.192
+                },
+                {
+                    "step": 15,
+                    "scenario": "6R/4H",
+                    "time_taken": 37.472,
+                    "failed_robots": 0,
+                    "sub_score": 37.472,
+                    "accumulated_score": 669.664
+                }
+            ]
+        },
+        {
+            "trial_number": 79,
+            "state": "TrialState.PRUNED",
+            "final_score": -1,
+            "params": {
+                "w_light": 0.0008222779174662256,
+                "w_prox": 9.994716834998675e-05,
+                "w_slide": 0.0021339126183292367,
+                "w_noise": 2.2874221494189526
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 2,
+                    "sub_score": 189.984,
+                    "accumulated_score": 189.984
+                }
+            ]
+        },
+        {
+            "trial_number": 80,
+            "state": "TrialState.PRUNED",
+            "final_score": 62.656,
+            "params": {
+                "w_light": 0.00041357382085655415,
+                "w_prox": 6.501604525330795e-05,
+                "w_slide": 0.0033654562040900896,
+                "w_noise": 2.1708057814348067
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 62.656,
+                    "failed_robots": 0,
+                    "sub_score": 62.656,
+                    "accumulated_score": 62.656
+                }
+            ]
+        },
+        {
+            "trial_number": 81,
+            "state": "TrialState.PRUNED",
+            "final_score": 51.648,
+            "params": {
+                "w_light": 0.0005938399713140427,
+                "w_prox": 8.28807796529284e-05,
+                "w_slide": 0.004352959800132176,
+                "w_noise": 2.5115924093631095
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 51.648,
+                    "failed_robots": 0,
+                    "sub_score": 51.648,
+                    "accumulated_score": 51.648
+                },
+                {
+                    "step": 2,
+                    "scenario": "9R/2H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 1,
+                    "sub_score": 139.984,
+                    "accumulated_score": 191.632
+                }
+            ]
+        },
+        {
+            "trial_number": 82,
+            "state": "TrialState.PRUNED",
+            "final_score": 75.712,
+            "params": {
+                "w_light": 0.00030123062352050133,
+                "w_prox": 5.710950830255744e-05,
+                "w_slide": 0.005432186835328801,
+                "w_noise": 2.2093821856816356
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 75.712,
+                    "failed_robots": 0,
+                    "sub_score": 75.712,
+                    "accumulated_score": 75.712
+                }
+            ]
+        },
+        {
+            "trial_number": 83,
+            "state": "TrialState.COMPLETE",
+            "final_score": 744.128,
+            "params": {
+                "w_light": 9.499481447950988e-05,
+                "w_prox": 4.6137604382136517e-05,
+                "w_slide": 0.0027982789372086704,
+                "w_noise": 1.060068854251602
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 52.288000000000004,
+                    "failed_robots": 0,
+                    "sub_score": 52.288000000000004,
+                    "accumulated_score": 52.288000000000004
+                },
+                {
+                    "step": 2,
+                    "scenario": "9R/2H",
+                    "time_taken": 69.056,
+                    "failed_robots": 0,
+                    "sub_score": 69.056,
+                    "accumulated_score": 121.344
+                },
+                {
+                    "step": 3,
+                    "scenario": "8R/2H",
+                    "time_taken": 41.856,
+                    "failed_robots": 0,
+                    "sub_score": 41.856,
+                    "accumulated_score": 163.2
+                },
+                {
+                    "step": 4,
+                    "scenario": "7R/2H",
+                    "time_taken": 84.928,
+                    "failed_robots": 0,
+                    "sub_score": 84.928,
+                    "accumulated_score": 248.128
+                },
+                {
+                    "step": 5,
+                    "scenario": "10R/3H",
+                    "time_taken": 41.056,
+                    "failed_robots": 0,
+                    "sub_score": 41.056,
+                    "accumulated_score": 289.18399999999997
+                },
+                {
+                    "step": 6,
+                    "scenario": "6R/2H",
+                    "time_taken": 54.464,
+                    "failed_robots": 0,
+                    "sub_score": 54.464,
+                    "accumulated_score": 343.64799999999997
+                },
+                {
+                    "step": 7,
+                    "scenario": "9R/3H",
+                    "time_taken": 52.832,
+                    "failed_robots": 0,
+                    "sub_score": 52.832,
+                    "accumulated_score": 396.47999999999996
+                },
+                {
+                    "step": 8,
+                    "scenario": "8R/3H",
+                    "time_taken": 36.96,
+                    "failed_robots": 0,
+                    "sub_score": 36.96,
+                    "accumulated_score": 433.43999999999994
+                },
+                {
+                    "step": 9,
+                    "scenario": "10R/4H",
+                    "time_taken": 37.056,
+                    "failed_robots": 0,
+                    "sub_score": 37.056,
+                    "accumulated_score": 470.4959999999999
+                },
+                {
+                    "step": 10,
+                    "scenario": "7R/3H",
+                    "time_taken": 86.016,
+                    "failed_robots": 0,
+                    "sub_score": 86.016,
+                    "accumulated_score": 556.512
+                },
+                {
+                    "step": 11,
+                    "scenario": "9R/4H",
+                    "time_taken": 50.272,
+                    "failed_robots": 0,
+                    "sub_score": 50.272,
+                    "accumulated_score": 606.784
+                },
+                {
+                    "step": 12,
+                    "scenario": "6R/3H",
+                    "time_taken": 34.976,
+                    "failed_robots": 0,
+                    "sub_score": 34.976,
+                    "accumulated_score": 641.76
+                },
+                {
+                    "step": 13,
+                    "scenario": "8R/4H",
+                    "time_taken": 36.864000000000004,
+                    "failed_robots": 0,
+                    "sub_score": 36.864000000000004,
+                    "accumulated_score": 678.624
+                },
+                {
+                    "step": 14,
+                    "scenario": "7R/4H",
+                    "time_taken": 32.288000000000004,
+                    "failed_robots": 0,
+                    "sub_score": 32.288000000000004,
+                    "accumulated_score": 710.912
+                },
+                {
+                    "step": 15,
+                    "scenario": "6R/4H",
+                    "time_taken": 33.216,
+                    "failed_robots": 0,
+                    "sub_score": 33.216,
+                    "accumulated_score": 744.128
+                }
+            ]
+        },
+        {
+            "trial_number": 84,
+            "state": "TrialState.PRUNED",
+            "final_score": -1,
+            "params": {
+                "w_light": 8.983133095610544e-05,
+                "w_prox": 8.387278480233351e-05,
+                "w_slide": 0.002823682464971735,
+                "w_noise": 1.3442434903715443
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 1,
+                    "sub_score": 139.984,
+                    "accumulated_score": 139.984
+                }
+            ]
+        },
+        {
+            "trial_number": 85,
+            "state": "TrialState.PRUNED",
+            "final_score": -1,
+            "params": {
+                "w_light": 0.00018256826354232954,
+                "w_prox": 3.148811835795757e-05,
+                "w_slide": 0.0023420727552166476,
+                "w_noise": 2.654131746854333
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 1,
+                    "sub_score": 139.984,
+                    "accumulated_score": 139.984
+                }
+            ]
+        },
+        {
+            "trial_number": 86,
+            "state": "TrialState.PRUNED",
+            "final_score": -1,
+            "params": {
+                "w_light": 0.0003736469070500353,
+                "w_prox": 4.988654239414252e-05,
+                "w_slide": 0.001826017419365761,
+                "w_noise": 1.124066581094913
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 2,
+                    "sub_score": 189.984,
+                    "accumulated_score": 189.984
+                }
+            ]
+        },
+        {
+            "trial_number": 87,
+            "state": "TrialState.PRUNED",
+            "final_score": 125.344,
+            "params": {
+                "w_light": 0.00023408487481922806,
+                "w_prox": 1.7591211294625176e-05,
+                "w_slide": 0.003211575423619838,
+                "w_noise": 1.6646754491308675
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 42.4,
+                    "failed_robots": 0,
+                    "sub_score": 42.4,
+                    "accumulated_score": 42.4
+                },
+                {
+                    "step": 2,
+                    "scenario": "9R/2H",
+                    "time_taken": 48.64,
+                    "failed_robots": 0,
+                    "sub_score": 48.64,
+                    "accumulated_score": 91.03999999999999
+                },
+                {
+                    "step": 3,
+                    "scenario": "8R/2H",
+                    "time_taken": 34.304,
+                    "failed_robots": 0,
+                    "sub_score": 34.304,
+                    "accumulated_score": 125.344
+                },
+                {
+                    "step": 4,
+                    "scenario": "7R/2H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 2,
+                    "sub_score": 189.984,
+                    "accumulated_score": 315.328
+                }
+            ]
+        },
+        {
+            "trial_number": 88,
+            "state": "TrialState.PRUNED",
+            "final_score": -1,
+            "params": {
+                "w_light": 0.00010913196502740511,
+                "w_prox": 6.412346672228764e-05,
+                "w_slide": 0.0040680921451158895,
+                "w_noise": 2.420980430857225
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 3,
+                    "sub_score": 239.984,
+                    "accumulated_score": 239.984
+                }
+            ]
+        },
+        {
+            "trial_number": 89,
+            "state": "TrialState.PRUNED",
+            "final_score": 64.96000000000001,
+            "params": {
+                "w_light": 0.0004933222818364577,
+                "w_prox": 2.330797400380823e-05,
+                "w_slide": 0.0020830581594656248,
+                "w_noise": 2.125514187400671
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 64.96000000000001,
+                    "failed_robots": 0,
+                    "sub_score": 64.96000000000001,
+                    "accumulated_score": 64.96000000000001
+                }
+            ]
+        },
+        {
+            "trial_number": 90,
+            "state": "TrialState.PRUNED",
+            "final_score": -1,
+            "params": {
+                "w_light": 2.2152927202784573e-05,
+                "w_prox": 3.755953119748303e-05,
+                "w_slide": 0.0036349727994864087,
+                "w_noise": 2.2497119389212417
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 8,
+                    "sub_score": 489.98400000000004,
+                    "accumulated_score": 489.98400000000004
+                }
+            ]
+        },
+        {
+            "trial_number": 91,
+            "state": "TrialState.PRUNED",
+            "final_score": 237.504,
+            "params": {
+                "w_light": 0.00013391615713529776,
+                "w_prox": 4.4281973718279636e-05,
+                "w_slide": 0.0030130808018529235,
+                "w_noise": 0.8108746974160939
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 53.536,
+                    "failed_robots": 0,
+                    "sub_score": 53.536,
+                    "accumulated_score": 53.536
+                },
+                {
+                    "step": 2,
+                    "scenario": "9R/2H",
+                    "time_taken": 76.736,
+                    "failed_robots": 0,
+                    "sub_score": 76.736,
+                    "accumulated_score": 130.272
+                },
+                {
+                    "step": 3,
+                    "scenario": "8R/2H",
+                    "time_taken": 30.368000000000002,
+                    "failed_robots": 0,
+                    "sub_score": 30.368000000000002,
+                    "accumulated_score": 160.64
+                },
+                {
+                    "step": 4,
+                    "scenario": "7R/2H",
+                    "time_taken": 41.824,
+                    "failed_robots": 0,
+                    "sub_score": 41.824,
+                    "accumulated_score": 202.464
+                },
+                {
+                    "step": 5,
+                    "scenario": "10R/3H",
+                    "time_taken": 35.04,
+                    "failed_robots": 0,
+                    "sub_score": 35.04,
+                    "accumulated_score": 237.504
+                },
+                {
+                    "step": 6,
+                    "scenario": "6R/2H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 2,
+                    "sub_score": 189.984,
+                    "accumulated_score": 427.488
+                }
+            ]
+        },
+        {
+            "trial_number": 92,
+            "state": "TrialState.PRUNED",
+            "final_score": -1,
+            "params": {
+                "w_light": 0.0006512534038367712,
+                "w_prox": 7.216872892073347e-05,
+                "w_slide": 0.002519575660449842,
+                "w_noise": 1.0032986873538225
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 2,
+                    "sub_score": 189.984,
+                    "accumulated_score": 189.984
+                }
+            ]
+        },
+        {
+            "trial_number": 93,
+            "state": "TrialState.PRUNED",
+            "final_score": 495.0400000000001,
+            "params": {
+                "w_light": 0.00016196033684549155,
+                "w_prox": 5.494113855898427e-05,
+                "w_slide": 0.008268496894898515,
+                "w_noise": 1.2223670538126108
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 52.64,
+                    "failed_robots": 0,
+                    "sub_score": 52.64,
+                    "accumulated_score": 52.64
+                },
+                {
+                    "step": 2,
+                    "scenario": "9R/2H",
+                    "time_taken": 43.392,
+                    "failed_robots": 0,
+                    "sub_score": 43.392,
+                    "accumulated_score": 96.03200000000001
+                },
+                {
+                    "step": 3,
+                    "scenario": "8R/2H",
+                    "time_taken": 58.4,
+                    "failed_robots": 0,
+                    "sub_score": 58.4,
+                    "accumulated_score": 154.43200000000002
+                },
+                {
+                    "step": 4,
+                    "scenario": "7R/2H",
+                    "time_taken": 31.68,
+                    "failed_robots": 0,
+                    "sub_score": 31.68,
+                    "accumulated_score": 186.11200000000002
+                },
+                {
+                    "step": 5,
+                    "scenario": "10R/3H",
+                    "time_taken": 66.336,
+                    "failed_robots": 0,
+                    "sub_score": 66.336,
+                    "accumulated_score": 252.44800000000004
+                },
+                {
+                    "step": 6,
+                    "scenario": "6R/2H",
+                    "time_taken": 25.12,
+                    "failed_robots": 0,
+                    "sub_score": 25.12,
+                    "accumulated_score": 277.56800000000004
+                },
+                {
+                    "step": 7,
+                    "scenario": "9R/3H",
+                    "time_taken": 66.112,
+                    "failed_robots": 0,
+                    "sub_score": 66.112,
+                    "accumulated_score": 343.68000000000006
+                },
+                {
+                    "step": 8,
+                    "scenario": "8R/3H",
+                    "time_taken": 44.608000000000004,
+                    "failed_robots": 0,
+                    "sub_score": 44.608000000000004,
+                    "accumulated_score": 388.28800000000007
+                },
+                {
+                    "step": 9,
+                    "scenario": "10R/4H",
+                    "time_taken": 34.528,
+                    "failed_robots": 0,
+                    "sub_score": 34.528,
+                    "accumulated_score": 422.8160000000001
+                },
+                {
+                    "step": 10,
+                    "scenario": "7R/3H",
+                    "time_taken": 36.864000000000004,
+                    "failed_robots": 0,
+                    "sub_score": 36.864000000000004,
+                    "accumulated_score": 459.68000000000006
+                },
+                {
+                    "step": 11,
+                    "scenario": "9R/4H",
+                    "time_taken": 35.36,
+                    "failed_robots": 0,
+                    "sub_score": 35.36,
+                    "accumulated_score": 495.0400000000001
+                },
+                {
+                    "step": 12,
+                    "scenario": "6R/3H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 1,
+                    "sub_score": 139.984,
+                    "accumulated_score": 635.0240000000001
+                }
+            ]
+        },
+        {
+            "trial_number": 94,
+            "state": "TrialState.COMPLETE",
+            "final_score": 528.1919999999999,
+            "params": {
+                "w_light": 0.0002858981547083228,
+                "w_prox": 9.995923141621381e-05,
+                "w_slide": 0.00841904047236007,
+                "w_noise": 1.3888724771710583
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 38.848,
+                    "failed_robots": 0,
+                    "sub_score": 38.848,
+                    "accumulated_score": 38.848
+                },
+                {
+                    "step": 2,
+                    "scenario": "9R/2H",
+                    "time_taken": 39.872,
+                    "failed_robots": 0,
+                    "sub_score": 39.872,
+                    "accumulated_score": 78.72
+                },
+                {
+                    "step": 3,
+                    "scenario": "8R/2H",
+                    "time_taken": 39.872,
+                    "failed_robots": 0,
+                    "sub_score": 39.872,
+                    "accumulated_score": 118.592
+                },
+                {
+                    "step": 4,
+                    "scenario": "7R/2H",
+                    "time_taken": 38.912,
+                    "failed_robots": 0,
+                    "sub_score": 38.912,
+                    "accumulated_score": 157.504
+                },
+                {
+                    "step": 5,
+                    "scenario": "10R/3H",
+                    "time_taken": 37.152,
+                    "failed_robots": 0,
+                    "sub_score": 37.152,
+                    "accumulated_score": 194.656
+                },
+                {
+                    "step": 6,
+                    "scenario": "6R/2H",
+                    "time_taken": 30.272000000000002,
+                    "failed_robots": 0,
+                    "sub_score": 30.272000000000002,
+                    "accumulated_score": 224.928
+                },
+                {
+                    "step": 7,
+                    "scenario": "9R/3H",
+                    "time_taken": 41.376,
+                    "failed_robots": 0,
+                    "sub_score": 41.376,
+                    "accumulated_score": 266.304
+                },
+                {
+                    "step": 8,
+                    "scenario": "8R/3H",
+                    "time_taken": 34.88,
+                    "failed_robots": 0,
+                    "sub_score": 34.88,
+                    "accumulated_score": 301.18399999999997
+                },
+                {
+                    "step": 9,
+                    "scenario": "10R/4H",
+                    "time_taken": 30.080000000000002,
+                    "failed_robots": 0,
+                    "sub_score": 30.080000000000002,
+                    "accumulated_score": 331.26399999999995
+                },
+                {
+                    "step": 10,
+                    "scenario": "7R/3H",
+                    "time_taken": 35.136,
+                    "failed_robots": 0,
+                    "sub_score": 35.136,
+                    "accumulated_score": 366.4
+                },
+                {
+                    "step": 11,
+                    "scenario": "9R/4H",
+                    "time_taken": 38.208,
+                    "failed_robots": 0,
+                    "sub_score": 38.208,
+                    "accumulated_score": 404.60799999999995
+                },
+                {
+                    "step": 12,
+                    "scenario": "6R/3H",
+                    "time_taken": 33.184,
+                    "failed_robots": 0,
+                    "sub_score": 33.184,
+                    "accumulated_score": 437.7919999999999
+                },
+                {
+                    "step": 13,
+                    "scenario": "8R/4H",
+                    "time_taken": 30.688000000000002,
+                    "failed_robots": 0,
+                    "sub_score": 30.688000000000002,
+                    "accumulated_score": 468.4799999999999
+                },
+                {
+                    "step": 14,
+                    "scenario": "7R/4H",
+                    "time_taken": 28.8,
+                    "failed_robots": 0,
+                    "sub_score": 28.8,
+                    "accumulated_score": 497.2799999999999
+                },
+                {
+                    "step": 15,
+                    "scenario": "6R/4H",
+                    "time_taken": 30.912,
+                    "failed_robots": 0,
+                    "sub_score": 30.912,
+                    "accumulated_score": 528.1919999999999
+                }
+            ]
+        },
+        {
+            "trial_number": 95,
+            "state": "TrialState.PRUNED",
+            "final_score": 247.872,
+            "params": {
+                "w_light": 0.0002930451768701283,
+                "w_prox": 9.908258155911248e-05,
+                "w_slide": 0.007943059742159104,
+                "w_noise": 1.2001480639718385
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 36.512,
+                    "failed_robots": 0,
+                    "sub_score": 36.512,
+                    "accumulated_score": 36.512
+                },
+                {
+                    "step": 2,
+                    "scenario": "9R/2H",
+                    "time_taken": 30.400000000000002,
+                    "failed_robots": 0,
+                    "sub_score": 30.400000000000002,
+                    "accumulated_score": 66.912
+                },
+                {
+                    "step": 3,
+                    "scenario": "8R/2H",
+                    "time_taken": 49.024,
+                    "failed_robots": 0,
+                    "sub_score": 49.024,
+                    "accumulated_score": 115.936
+                },
+                {
+                    "step": 4,
+                    "scenario": "7R/2H",
+                    "time_taken": 36.896,
+                    "failed_robots": 0,
+                    "sub_score": 36.896,
+                    "accumulated_score": 152.832
+                },
+                {
+                    "step": 5,
+                    "scenario": "10R/3H",
+                    "time_taken": 46.944,
+                    "failed_robots": 0,
+                    "sub_score": 46.944,
+                    "accumulated_score": 199.776
+                },
+                {
+                    "step": 6,
+                    "scenario": "6R/2H",
+                    "time_taken": 48.096000000000004,
+                    "failed_robots": 0,
+                    "sub_score": 48.096000000000004,
+                    "accumulated_score": 247.872
+                },
+                {
+                    "step": 7,
+                    "scenario": "9R/3H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 1,
+                    "sub_score": 139.984,
+                    "accumulated_score": 387.856
+                }
+            ]
+        },
+        {
+            "trial_number": 96,
+            "state": "TrialState.PRUNED",
+            "final_score": 83.68,
+            "params": {
+                "w_light": 0.00016749186047706466,
+                "w_prox": 8.792328695105911e-05,
+                "w_slide": 0.009325034124174205,
+                "w_noise": 0.10155932489803221
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 83.68,
+                    "failed_robots": 0,
+                    "sub_score": 83.68,
+                    "accumulated_score": 83.68
+                }
+            ]
+        },
+        {
+            "trial_number": 97,
+            "state": "TrialState.PRUNED",
+            "final_score": 54.656,
+            "params": {
+                "w_light": 0.0002157389971571272,
+                "w_prox": 5.279202072521422e-05,
+                "w_slide": 0.011703992346419535,
+                "w_noise": 1.2536683679804654
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 54.656,
+                    "failed_robots": 0,
+                    "sub_score": 54.656,
+                    "accumulated_score": 54.656
+                }
+            ]
+        },
+        {
+            "trial_number": 98,
+            "state": "TrialState.PRUNED",
+            "final_score": -1,
+            "params": {
+                "w_light": 0.00011817017383464431,
+                "w_prox": 7.96970129522652e-05,
+                "w_slide": 0.014262108321549009,
+                "w_noise": 1.5803447642732351
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 2,
+                    "sub_score": 189.984,
+                    "accumulated_score": 189.984
+                }
+            ]
+        },
+        {
+            "trial_number": 99,
+            "state": "TrialState.PRUNED",
+            "final_score": -1,
+            "params": {
+                "w_light": 9.321162108153455e-05,
+                "w_prox": 6.322536793232512e-05,
+                "w_slide": 0.0014306601437689092,
+                "w_noise": 1.4743505511589683
+            },
+            "history": [
+                {
+                    "step": 1,
+                    "scenario": "10R/2H",
+                    "time_taken": 89.98400000000001,
+                    "failed_robots": 1,
+                    "sub_score": 139.984,
+                    "accumulated_score": 139.984
+                }
+            ]
+        }
+    ]
+}

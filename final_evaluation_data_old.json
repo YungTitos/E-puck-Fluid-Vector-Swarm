@@ -3,43 +3,43 @@
         {
             "robots": 6,
             "holes": 2,
-            "avg_time": 38.361599999999996,
+            "avg_time": 53.96479999999999,
             "success_rate": 100.0
         },
         {
             "robots": 7,
             "holes": 2,
-            "avg_time": 38.25279999999999,
+            "avg_time": 54.7456,
             "success_rate": 100.0
         },
         {
             "robots": 8,
             "holes": 2,
-            "avg_time": 47.366400000000006,
+            "avg_time": 51.63520000000001,
             "success_rate": 100.0
         },
         {
             "robots": 9,
             "holes": 2,
-            "avg_time": 48.128,
+            "avg_time": 44.096000000000004,
             "success_rate": 100.0
         },
         {
             "robots": 10,
             "holes": 2,
-            "avg_time": 51.3728,
+            "avg_time": 61.9072,
             "success_rate": 100.0
         },
         {
             "robots": 11,
             "holes": 2,
-            "avg_time": 58.12480000000001,
+            "avg_time": 63.065599999999996,
             "success_rate": 100.0
         },
         {
             "robots": 12,
             "holes": 2,
-            "avg_time": 44.332800000000006,
+            "avg_time": 79.5968,
             "success_rate": 100.0
         }
     ],
@@ -47,31 +47,31 @@
         {
             "robots": 10,
             "holes": 1,
-            "avg_time": 77.44000000000001,
+            "avg_time": 66.55359999999999,
             "success_rate": 96.0
         },
         {
             "robots": 10,
             "holes": 2,
-            "avg_time": 57.7856,
-            "success_rate": 98.0
-        },
-        {
-            "robots": 10,
-            "holes": 3,
-            "avg_time": 56.352,
-            "success_rate": 98.0
-        },
-        {
-            "robots": 10,
-            "holes": 4,
-            "avg_time": 37.068799999999996,
+            "avg_time": 50.028800000000004,
             "success_rate": 100.0
         },
         {
             "robots": 10,
+            "holes": 3,
+            "avg_time": 42.848,
+            "success_rate": 100.0
+        },
+        {
+            "robots": 10,
+            "holes": 4,
+            "avg_time": 55.2384,
+            "success_rate": 98.0
+        },
+        {
+            "robots": 10,
             "holes": 5,
-            "avg_time": 34.2784,
+            "avg_time": 31.628800000000002,
             "success_rate": 100.0
         }
     ]
